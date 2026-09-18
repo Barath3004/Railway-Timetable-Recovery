@@ -1,0 +1,5 @@
+model,passed,total,behavioral_score,delay_test,duration_test,affected_trains_test,peak_test,demand_test,candidate_test
+Random Forest,6,6,1.0,PASS,PASS,PASS,PASS,PASS,PASS
+Extra Trees,6,6,1.0,PASS,PASS,PASS,PASS,PASS,PASS
+Gradient Boosting,5,6,0.8333333333333334,PASS,FAIL,PASS,PASS,PASS,PASS
+HistGradientBoosting,6,6,1.0,PASS,PASS,PASS,PASS,PASS,PASS

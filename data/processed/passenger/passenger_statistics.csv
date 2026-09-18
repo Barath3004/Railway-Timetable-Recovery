@@ -1,0 +1,398 @@
+division,station_name,station_code,district,state,category,annual_earnings,annual_passengers,daily_earnings,daily_passengers,footfall
+Madurai,Madurai Junction,MDU,Madurai,Tamil Nadu,NSG 2,1866183588.0,6701350.0,5112832.0,18360.0,38131.0
+Madurai,Tirunelveli Junction,TEN,Tirunelveli,Tamil Nadu,NSG 3,1148600461.0,4020879.0,3146851.0,11016.0,23416.0
+Madurai,Dindigul Junction,DG,Dindigul,Tamil Nadu,NSG 3,428934623.0,2011715.0,1175163.0,5512.0,11291.0
+Madurai,Rameswaram,RMM,Ramanathapuram,Tamil Nadu,NSG 3,370074945.0,1088427.0,1013904.0,2982.0,6516.0
+Madurai,Tuticorin,TN,Tuticorin,Tamil Nadu,NSG 3,321265127.0,712374.0,880178.0,1952.0,3623.0
+Madurai,Virudhunagar Junction,VPT,Virudhunagar,Tamil Nadu,NSG 4,266233935.0,1338063.0,729408.0,3666.0,6802.0
+Madurai,Kovilpatti,CVP,Tuticorin,Tamil Nadu,NSG 4,224378641.0,873548.0,614736.0,2393.0,4756.0
+Madurai,Tenkasi Junction,TSI,Tenkasi,Tamil Nadu,NSG 4,201156578.0,1080204.0,551114.0,2959.0,6572.0
+Madurai,Ramanathapuram,RMD,Ramanathapuram,Tamil Nadu,NSG 4,157328677.0,734635.0,431037.0,2013.0,4151.0
+Madurai,Tiruchendur,TCN,Tuticorin,Tamil Nadu,NSG 4,154634504.0,967465.0,423656.0,2651.0,5609.0
+Madurai,Palani,PLNI,Dindigul,Tamil Nadu,NSG 4,123339579.0,679352.0,337917.0,1861.0,3912.0
+Madurai,Karaikkudi Junction,KKDI,Sivaganga,Tamil Nadu,NSG 4,98579082.0,711396.0,270080.0,1949.0,3975.0
+Madurai,Rajapalayam,RJPM,Virudhunagar,Tamil Nadu,NSG 5,98300545.0,605484.0,269317.0,1659.0,3114.0
+Madurai,Sattur,SRT,Virudhunagar,Tamil Nadu,NSG 5,97777317.0,460639.0,267883.0,1262.0,2431.0
+Madurai,Paramakkudi,PMK,Ramanathapuram,Tamil Nadu,NSG 5,95952527.0,584427.0,262884.0,1601.0,2906.0
+Madurai,Sengottai,SCT,Tenkasi,Tamil Nadu,NSG 5,79966250.0,484203.0,219086.0,1327.0,2391.0
+Madurai,Sivakasi,SVKS,Virudhunagar,Tamil Nadu,NSG 5,72992876.0,438850.0,199980.0,1202.0,2235.0
+Madurai,Sankarankovil,SNKL,Tenkasi,Tamil Nadu,NSG 5,64593695.0,450867.0,176969.0,1235.0,2326.0
+Madurai,Manamadurai Junction,MNM,Sivaganga,Tamil Nadu,NSG 5,60227382.0,388500.0,165007.0,1064.0,2067.0
+Madurai,Thirupparankundram,TDN,Madurai,Tamil Nadu,NSG 5,50184529.0,227855.0,137492.0,624.0,738.0
+Madurai,Pudukkotai,PDKT,Pudukkottai,Tamil Nadu,NSG 5,44890001.0,312606.0,122986.0,856.0,1564.0
+Madurai,Srivilliputtur,SVPR,Virudhunagar,Tamil Nadu,NSG 5,41408474.0,202560.0,113448.0,555.0,1031.0
+Madurai,Sivaganga,SVGA,Sivaganga,Tamil Nadu,NSG 5,38610816.0,349352.0,105783.0,957.0,1839.0
+Madurai,Devakottai road,DKO,Sivaganga,Tamil Nadu,NSG 5,30436137.0,208605.0,83387.0,572.0,985.0
+Madurai,Vanchi maniyachi,MEJ,Tuticorin,Tamil Nadu,NSG 5,30015508.0,192651.0,82234.0,528.0,816.0
+Madurai,Kodaikkanal road,KQN,Dindigul,Tamil Nadu,NSG 5,29414746.0,154521.0,80588.0,423.0,816.0
+Madurai,Kadayanallur,KDNL,Tenkasi,Tamil Nadu,NSG 5,27746621.0,160134.0,76018.0,439.0,825.0
+Madurai,Tiruttangal,TTL,Virudhunagar,Tamil Nadu,NSG 5,25548196.0,265111.0,69995.0,726.0,1335.0
+Madurai,Tirumangalam,TMQ,Madurai,Tamil Nadu,NSG 5,22193403.0,162725.0,60804.0,446.0,878.0
+Madurai,Oddanchatram,ODC,Dindigul,Tamil Nadu,NSG 5,22134316.0,117255.0,60642.0,321.0,614.0
+Madurai,Ambasamudram,ASD,Tirunelveli,Tamil Nadu,NSG 5,14182926.0,498235.0,38857.0,1365.0,2441.0
+Madurai,Sholavandan,SDN,Madurai,Tamil Nadu,NSG 5,11994331.0,200936.0,32861.0,551.0,867.0
+Madurai,Nazareth,NZT,Tuticorin,Tamil Nadu,NSG 5,11865398.0,271710.0,32508.0,744.0,1202.0
+Madurai,Bodinayakkanur,BDNK,Theni,Tamil Nadu,NSG 6,,,,,
+Madurai,Mandapam,MMM,Ramanathapuram,Tamil Nadu,NSG 6,54520021.0,187798.0,149370.0,515.0,755.0
+Madurai,Udumalaippettai,UDT,Tiruppur,Tamil Nadu,NSG 6,41847465.0,223426.0,114651.0,612.0,1149.0
+Madurai,Punalur,PUU,Kollam,Kerala,NSG 6,21671125.0,437717.0,59373.0,1199.0,2512.0
+Madurai,Kottarakara,KKZ,Kollam,Kerala,NSG 6,16817257.0,295414.0,46075.0,809.0,1414.0
+Madurai,Manaparai,MPA,Tiruchirappalli,Tamil Nadu,NSG 6,14887383.0,496859.0,40787.0,1361.0,2457.0
+Madurai,Pambakovil shandy,PBKS,Tenkasi,Tamil Nadu,NSG 6,12870021.0,104391.0,35260.0,286.0,499.0
+Madurai,Aruppukkottai,APK,Virudhunagar,Tamil Nadu,NSG 6,12346741.0,64096.0,33827.0,176.0,342.0
+Madurai,Kurumbur,KZB,Tuticorin,Tamil Nadu,NSG 6,9413598.0,143309.0,25791.0,393.0,709.0
+Madurai,Kudalnagar,KON,Madurai,Tamil Nadu,NSG 6,9382800.0,32081.0,25706.0,88.0,125.0
+Madurai,Kundara,KUV,Kollam,Kerala,NSG 6,6613959.0,259448.0,18120.0,711.0,1005.0
+Madurai,Kallidaikurichi,KIC,Tirunelveli,Tamil Nadu,NSG 6,5844490.0,306674.0,16012.0,840.0,1298.0
+Madurai,Kayalpattinam,KZY,Tuticorin,Tamil Nadu,NSG 6,5718400.0,92547.0,15667.0,254.0,473.0
+Madurai,Kadambur,KDU,Tuticorin,Tamil Nadu,NSG 6,5530818.0,49625.0,15153.0,136.0,241.0
+Madurai,Auvaneeswarem,AVS,Kollam,Kerala,NSG 6,5227271.0,165887.0,14321.0,454.0,656.0
+Madurai,Ambaturai,ABI,Dindigul,Tamil Nadu,NSG 6,4821629.0,66048.0,13210.0,181.0,278.0
+Madurai,Kallal,KAL,Sivaganga,Tamil Nadu,NSG 6,4132605.0,37323.0,11322.0,102.0,174.0
+Madurai,Pavurchatram,PCM,Tenkasi,Tamil Nadu,NSG 6,3584238.0,113336.0,9820.0,311.0,592.0
+Madurai,Cheran mahadevi,SMD,Tirunelveli,Tamil Nadu,NSG 6,3323211.0,198622.0,9105.0,544.0,859.0
+Madurai,Kilikollur,KLQ,Kollam,Kerala,NSG 6,3216903.0,242966.0,8813.0,666.0,980.0
+Madurai,Teni,TENI,Theni,Tamil Nadu,NSG 6,3195095.0,80358.0,8754.0,220.0,459.0
+Madurai,Kilakadaiyam,KKY,Tirunelveli,Tamil Nadu,NSG 6,3191417.0,70585.0,8744.0,193.0,326.0
+Madurai,Pamban,PBM,Ramanathapuram,Tamil Nadu,NSG 6,3114773.0,51015.0,8534.0,140.0,240.0
+Madurai,Kizhapuliyur,KYZ,Tenkasi,Tamil Nadu,NSG 6,2847825.0,100887.0,7802.0,276.0,389.0
+Madurai,Palayamkottai,PCO,Tirunelveli,Tamil Nadu,NSG 6,2555830.0,137085.0,7002.0,376.0,692.0
+Madurai,Madurai east,MES,Madurai,Tamil Nadu,NSG 6,2427795.0,62160.0,6651.0,170.0,259.0
+Madurai,Tirunelveli town,TYT,Tirunelveli,Tamil Nadu,NSG 6,2377575.0,104043.0,6514.0,285.0,384.0
+Madurai,Pettai,PEA,Tirunelveli,Tamil Nadu,NSG 6,2196820.0,107157.0,6019.0,294.0,419.0
+Madurai,Srivaikuntam,SVV,Tuticorin,Tamil Nadu,NSG 6,2146167.0,48194.0,5880.0,132.0,207.0
+Madurai,Arumuganeri,ANY,Tuticorin,Tamil Nadu,NSG 6,2081487.0,41796.0,5703.0,115.0,183.0
+Madurai,Ravanasamudram,RVS,Tenkasi,Tamil Nadu,NSG 6,1610740.0,60801.0,4413.0,167.0,289.0
+Madurai,Uchippuli,UCP,Ramanathapuram,Tamil Nadu,NSG 6,1481405.0,29221.0,4059.0,80.0,148.0
+Madurai,Mettur,MTE,Tenkasi,Tamil Nadu,NSG 6,1397615.0,77774.0,3829.0,213.0,311.0
+Madurai,Ezhukone,EKN,Kollam,Kerala,NSG 6,1305382.0,137847.0,3576.0,378.0,504.0
+Madurai,Seydunganallur,SDNR,Tuticorin,Tamil Nadu,NSG 6,1272560.0,41775.0,3486.0,114.0,162.0
+Madurai,Andipatti,ADPT,Theni,Tamil Nadu,NSG 6,915075.0,26973.0,2507.0,74.0,125.0
+Madurai,Alwar tirunagari,AWT,Tuticorin,Tamil Nadu,NSG 6,828740.0,62282.0,2271.0,171.0,217.0
+Madurai,Kumaramangalam,KRMG,Triuchirappalli,Tamil Nadu,NSG 6,736690.0,17816.0,2018.0,49.0,117.0
+Madurai,Vaiyampatti,VPJ,Dindigul,Tamil Nadu,NSG 6,681020.0,49614.0,1866.0,136.0,264.0
+Madurai,Tirumayam,TYM,Pudukkottai,Tamil Nadu,NSG 6,609365.0,19297.0,1669.0,53.0,101.0
+Madurai,Gomangalam,GMGM,Coimbatore,Tamil Nadu,NSG 6,504505.0,6588.0,1382.0,18.0,32.0
+Madurai,Kalligudi,KGD,Virudhunagar,Tamil Nadu,NSG 6,486770.0,18160.0,1334.0,50.0,90.0
+Madurai,Kachchanavilai,KCHV,Tuticorin,Tamil Nadu,NSG 6,470655.0,20886.0,1289.0,57.0,91.0
+Madurai,Tenmalai,TML,Kollam,Kerala,NSG 6,454669.0,7527.0,1246.0,21.0,51.0
+Madurai,Tiruppuvanam,TVN,Sivaganga,Tamil Nadu,NSG 6,453260.0,14074.0,1242.0,39.0,63.0
+Madurai,Vellanur,VEL,Pudukkottai,Tamil Nadu,NSG 6,414265.0,26419.0,1135.0,72.0,105.0
+Madurai,Silaiman,ILA,Madurai,Tamil Nadu,NSG 6,396850.0,10803.0,1087.0,30.0,51.0
+Madurai,Sattirakkudi,SQD,Ramanathapuram,Tamil Nadu,NSG 6,381765.0,11307.0,1046.0,31.0,52.0
+Madurai,Keeranur,KRUR,Pudukkottai,Tamil Nadu,NSG 6,381240.0,34722.0,1044.0,95.0,154.0
+Madurai,Chettinad,CTND,Sivaganga,Tamil Nadu,NSG 6,330460.0,8406.0,905.0,23.0,41.0
+Madurai,Usilampatti,USLP,Madurai,Tamil Nadu,NSG 6,326915.0,11830.0,896.0,32.0,55.0
+Madurai,Talaiyuthu,TAY,Tirunelveli,Tamil Nadu,NSG 6,314690.0,8361.0,862.0,23.0,33.0
+Madurai,Thathankulam,TTQ,Tuticorin,Tamil Nadu,NSG 6,298900.0,29255.0,819.0,80.0,106.0
+Madurai,Tiruppachetti,TPC,Sivaganga,Tamil Nadu,NSG 6,281415.0,19737.0,771.0,54.0,87.0
+Madurai,Samayanallur,SER,Madurai,Tamil Nadu,NSG 6,240950.0,5227.0,660.0,14.0,25.0
+Madurai,Tulukapatti,TY,Virudhunagar,Tamil Nadu,NSG 6,185775.0,4187.0,509.0,11.0,12.0
+Madurai,Vadamadurai,VDM,Dindigul,Tamil Nadu,NSG 6,171820.0,4031.0,471.0,11.0,20.0
+Madurai,Vadipatti,VDP,Madurai,Tamil Nadu,NSG 6,168745.0,4518.0,462.0,12.0,21.0
+Madurai,Tiruchchuli,TCH,Virudhunagar,Tamil Nadu,NSG 6,145895.0,4752.0,400.0,13.0,21.0
+Madurai,Ayyalur,AYR,Dindigul,Tamil Nadu,NSG 6,144630.0,4321.0,396.0,12.0,23.0
+Madurai,Melakkonnakkulam,MEKM,Sivaganga,Tamil Nadu,NSG 6,141140.0,10366.0,387.0,28.0,35.0
+Madurai,Sudiyur,SUX,Ramanathapuram,Tamil Nadu,NSG 6,140390.0,17934.0,385.0,49.0,71.0
+Madurai,Kolathur,KLS,Tiruchirappalli,Tamil Nadu,NSG 6,137780.0,20728.0,377.0,57.0,109.0
+Madurai,Akkaraippatti,API,Dindigul,Tamil Nadu,NSG 6,129985.0,2835.0,356.0,8.0,23.0
+Madurai,Panangudi,PNGI,Sivaganga,Tamil Nadu,NSG 6,116915.0,3503.0,320.0,10.0,16.0
+Madurai,Narikkudi,NKK,Virudhunagar,Tamil Nadu,NSG 6,101225.0,2451.0,277.0,7.0,14.0
+Madurai,Tamaraipadi,TMP,Dindigul,Tamil Nadu,NSG 6,86975.0,1828.0,238.0,5.0,7.0
+Madurai,Edamann,EDN,Kollam,Kerala,NSG 6,79675.0,2628.0,218.0,7.0,28.0
+Madurai,Bhagavathipuram,BJM,Tenkasi,Tamil Nadu,NSG 6,74465.0,2034.0,204.0,6.0,7.0
+Madurai,Maivadi road,MVRD,Tiruppur,Tamil Nadu,NSG 6,71650.0,1515.0,196.0,4.0,6.0
+Madurai,Chatrappatti,CHPT,Dindigul,Tamil Nadu,NSG 6,67970.0,1395.0,186.0,4.0,6.0
+Madurai,Pushpattur,PPTR,Dindigul,Tamil Nadu,NSG 6,48230.0,1050.0,132.0,3.0,4.0
+Madurai,Tattaparai,TIP,Tuticorin,Tamil Nadu,NSG 6,41475.0,1879.0,114.0,5.0,13.0
+Madurai,Kalpattichatram,KFC,Dindigul,Tamil Nadu,NSG 6,39415.0,2685.0,108.0,7.0,11.0
+Madurai,Gangaikondan,GDN,Tirunelveli,Tamil Nadu,NSG 6,35605.0,1418.0,98.0,4.0,7.0
+Madurai,Punggudi,PUG,Tiruchirappalli,Tamil Nadu,NSG 6,29320.0,3103.0,80.0,9.0,26.0
+Madurai,Milavittan,MVN,Tuticorin,Tamil Nadu,NSG 6,28565.0,749.0,78.0,2.0,7.0
+Madurai,New Aryankavu,AYVN,Kollam,Kerala,NSG 6,22360.0,530.0,61.0,1.0,19.0
+Madurai,Azhwarkurichi,AZK,Tenkasi,Tamil Nadu,HG 2,1489545.0,61760.0,4081.0,169.0,361.0
+Madurai,Kottaiyur,KTYR,Sivaganga,Tamil Nadu,HG 2,1410070.0,32501.0,3863.0,89.0,170.0
+Madurai,Kizha ambur,KIB,Tenkasi,Tamil Nadu,HG 2,1147395.0,47967.0,3144.0,131.0,284.0
+Madurai,Viravanallur,VVR,Tirunelveli,Tamil Nadu,HG 2,1040250.0,48287.0,2850.0,132.0,238.0
+Madurai,Mandapam camp,MC,Ramanathapuram,Tamil Nadu,HG 2,699900.0,12520.0,1918.0,34.0,42.0
+Madurai,Karaikkurichchi,KARK,Tirunelveli,Tamil Nadu,HG 2,693045.0,49619.0,1899.0,136.0,195.0
+Madurai,Valantaravai,VTV,Ramanathapuram,Tamil Nadu,HG 2,433995.0,9262.0,1189.0,25.0,61.0
+Madurai,Madathukulam,MDKM,Tiruppur,Tamil Nadu,HG 2,414345.0,8675.0,1135.0,24.0,38.0
+Madurai,Tutimelur,TME,Tuticorin,Tamil Nadu,HG 2,260995.0,6277.0,715.0,17.0,23.0
+Madurai,Kuri,KIF,Kollam,Kerala,HG 2,231485.0,17754.0,634.0,49.0,56.0
+Madurai,Chettiyapatti,CII,Tiruchirappalli,Tamil Nadu,HG 2,197095.0,37742.0,540.0,103.0,280.0
+Madurai,Kailasapuram,KLPM,Tuticorin,Tamil Nadu,HG 2,91120.0,12486.0,250.0,34.0,54.0
+Madurai,Aryankavu,AYV,Kollam,Kerala,HG 3,639145.0,15789.0,1751.0,43.0,72.0
+Madurai,Vadpalanji,VAJ,Madurai,Tamil Nadu,HG 3,211300.0,6100.0,579.0,17.0,40.0
+Madurai,Samudram,SMDM,Tiruchirappalli,Tamil Nadu,HG 3,186940.0,38059.0,512.0,104.0,123.0
+Madurai,Rajagambiram,RAGM,Sivaganga,Tamil Nadu,HG 3,181280.0,6450.0,497.0,18.0,48.0
+Madurai,Chandanattop,CTPE,Kollam,Kerala,HG 3,135295.0,8219.0,371.0,23.0,47.0
+Madurai,Namanasamudram,NMN,Pudukkottai,Tamil Nadu,HG 3,133285.0,3291.0,365.0,9.0,21.0
+Madurai,Naraikkinar,NRK,Tirunelveli,Tamil Nadu,HG 3,129530.0,4358.0,355.0,12.0,40.0
+Madurai,Kalthurithi,KTHY,Kollam,Kerala,HG 3,110395.0,2983.0,302.0,8.0,14.0
+Madurai,Kundara east,KFV,Kollam,Kerala,HG 3,100425.0,11985.0,275.0,33.0,55.0
+Madurai,Ottakkal,OKL,Kollam,Kerala,HG 3,34430.0,1052.0,94.0,3.0,7.0
+Madurai,Edapalayam,EDP,Kollam,Kerala,HG 3,15550.0,435.0,43.0,1.0,2.0
+Thiruvananthapuram,Thiruvananthapuram central,TVC,Thiruvananthapuram,Kerala,NSG 2,2159589198.0,10908300.0,5916683.0,29886.0,
+Thiruvananthapuram,Ernakulam Junction,ERS,Ernakulam,Kerala,NSG 2,2134368310.0,7318252.0,5847584.0,20050.0,
+Thiruvananthapuram,Thrisur,TCR,Thrissur,Kerala,NSG 2,1346198702.0,5871287.0,3688216.0,16086.0,
+Thiruvananthapuram,Ernakulam town,ERN,Ernakulam,Kerala,NSG 3,972428865.0,3954910.0,2664189.0,10835.0,
+Thiruvananthapuram,Kollam Junction,QLN,Kollam,Kerala,NSG 3,848380845.0,6704147.0,2324331.0,18368.0,
+Thiruvananthapuram,Nagercoil Junction,NCJ,Kanniyakumari,Tamil Nadu,NSG 3,733615712.0,2313910.0,2009906.0,6339.0,
+Thiruvananthapuram,Aluva,AWY,Ernakulam,Kerala,NSG 3,727233064.0,3464482.0,1992419.0,9492.0,
+Thiruvananthapuram,Kottayam,KTYM,Kottayam,Kerala,NSG 3,677789875.0,3263160.0,1856959.0,8940.0,
+Thiruvananthapuram,Chengannur,CNGR,Alappuzha,Kerala,NSG 3,546848133.0,2152716.0,1498214.0,5898.0,
+Thiruvananthapuram,Kayankulam Junction,KYJ,Alappuzha,Kerala,NSG 3,505889627.0,2380331.0,1385999.0,6521.0,
+Thiruvananthapuram,Kochuveli,KCVL,Thiruvananthapuram,Kerala,NSG 3,462818180.0,946722.0,1267995.0,2594.0,
+Thiruvananthapuram,Alappuzha,ALLP,Alappuzha,Kerala,NSG 3,297643634.0,1883970.0,815462.0,5162.0,
+Thiruvananthapuram,Kanniyakumari,CAPE,Kanniyakumari,Tamil Nadu,NSG 4,252253722.0,630509.0,691106.0,1727.0,
+Thiruvananthapuram,Tiruvalla,TRVL,Pathanamthitta,Kerala,NSG 4,201497685.0,1134665.0,552048.0,3109.0,
+Thiruvananthapuram,Varkalashivagiri,VAK,Thiruvananthapuram,Kerala,NSG 4,166935000.0,3341064.0,457356.0,9154.0,
+Thiruvananthapuram,Changanacheri,CGY,Kottayam,Kerala,NSG 4,119974953.0,1020395.0,328699.0,2796.0,
+Thiruvananthapuram,Guruvayur,GUV,Thrissur,Kerala,NSG 4,78411658.0,805036.0,214826.0,2206.0,
+Thiruvananthapuram,Angamali for kaladi,AFK,Ernakulam,Kerala,NSG 4,73679198.0,988661.0,201861.0,2709.0,
+Thiruvananthapuram,Valliyur,VLY,Tirunelveli,Tamil Nadu,NSG 5,129235069.0,352765.0,354069.0,966.0,
+Thiruvananthapuram,Kulitturai,KZT,Kanniyakumari,Tamil Nadu,NSG 5,95173286.0,982090.0,260749.0,2691.0,
+Thiruvananthapuram,Tripunittura,TRTR,Ernakulam,Kerala,NSG 5,85857934.0,676895.0,235227.0,1855.0,
+Thiruvananthapuram,Cherthala,SRTL,Alappuzha,Kerala,NSG 5,85396663.0,1114947.0,233963.0,3055.0,
+Thiruvananthapuram,Karunagapalli,KPY,Kollam,Kerala,NSG 5,76063071.0,1715776.0,208392.0,4701.0,
+Thiruvananthapuram,Nagercoil Town,NJT,Kanniyakumari,Tamil Nadu,NSG 5,65782453.0,213396.0,180226.0,585.0,
+Thiruvananthapuram,Mavelikara,MVLK,Alappuzha,Kerala,NSG 5,64989351.0,618328.0,178053.0,1694.0,
+Thiruvananthapuram,Chalakudi,CKI,Thrissur,Kerala,NSG 5,58695053.0,1200104.0,160808.0,3288.0,
+Thiruvananthapuram,Eraniel,ERL,Kanniyakumari,Tamil Nadu,NSG 5,49776708.0,411405.0,136375.0,1127.0,
+Thiruvananthapuram,Irinjalakuda,IJK,Thrissur,Kerala,NSG 5,48786133.0,954563.0,133661.0,2615.0,
+Thiruvananthapuram,Haripad,HAD,Alappuzha,Kerala,NSG 5,47939843.0,455450.0,131342.0,1248.0,
+Thiruvananthapuram,Piravam road,PVRD,Ernakulam,Kerala,NSG 5,30931875.0,559132.0,84745.0,1532.0,
+Thiruvananthapuram,Parassala,PASA,Thiruvananthapuram,Kerala,NSG 5,28770748.0,915609.0,78824.0,2509.0,
+Thiruvananthapuram,Kazhakuttom,KZK,Thiruvananthapuram,Kerala,NSG 5,27481532.0,508501.0,75292.0,1393.0,
+Thiruvananthapuram,Neyyatinkara,NYY,Thiruvananthapuram,Kerala,NSG 5,25935701.0,1086749.0,71057.0,2977.0,
+Thiruvananthapuram,Ambalapuzha,AMPA,Alappuzha,Kerala,NSG 5,23960661.0,288779.0,65646.0,791.0,
+Thiruvananthapuram,Sasthankotta,STKT,Kollam,Kerala,NSG 5,19403569.0,853381.0,53160.0,2338.0,
+Thiruvananthapuram,Nanguneri,NNN,Tirunelveli,Tamil Nadu,NSG 5,19368226.0,73993.0,53064.0,203.0,
+Thiruvananthapuram,Wadakancheri,WKI,Thrissur,Kerala,NSG 5,18191052.0,336131.0,49838.0,921.0,
+Thiruvananthapuram,Chirayinkil (FLAG),CRY,Thiruvananthapuram,Kerala,NSG 5,17221793.0,644351.0,47183.0,1765.0,
+Thiruvananthapuram,Paravur,PVU,Kollam,Kerala,NSG 5,17045337.0,867926.0,46700.0,2378.0,
+Thiruvananthapuram,Turavur,TUVR,Alappuzha,Kerala,NSG 6,9437577.0,328426.0,25856.0,900.0,
+Thiruvananthapuram,Ettumanur,ETM,Kottayam,Kerala,NSG 6,8428049.0,254131.0,23091.0,696.0,
+Thiruvananthapuram,Kadakavur,KVU,Thiruvananthapuram,Kerala,NSG 6,7143697.0,306102.0,19572.0,839.0,
+Thiruvananthapuram,Punkunnam,PNQ,Thrissur,Kerala,NSG 6,5905313.0,304056.0,16179.0,833.0,
+Thiruvananthapuram,Idappalli,IPL,Ernakulam,Kerala,NSG 6,5363010.0,168787.0,14693.0,462.0,
+Thiruvananthapuram,Tiruvananthapuram pettah (FLAG),TVP,Thiruvananthapuram,Kerala,NSG 6,5361590.0,150349.0,14689.0,412.0,
+Thiruvananthapuram,Vaikam road,VARD,Kottayam,Kerala,NSG 6,5333916.0,165820.0,14613.0,454.0,
+Thiruvananthapuram,Mararikulam,MAKM,Alappuzha,Kerala,NSG 6,5103377.0,324236.0,13982.0,888.0,
+Thiruvananthapuram,Pudukad,PUK,Thrissur,Kerala,NSG 6,5059914.0,283925.0,13863.0,778.0,
+Thiruvananthapuram,Mulanturutti,MNTT,Ernakulam,Kerala,NSG 6,3924529.0,130766.0,10752.0,358.0,
+Thiruvananthapuram,Mayyanad,MYY,Kollam,Kerala,NSG 6,2598752.0,110876.0,7120.0,304.0,
+Thiruvananthapuram,Aralvaymoli,AAY,Kanniyakumari,Tamil Nadu,NSG 6,1852075.0,12617.0,5074.0,35.0,
+Thiruvananthapuram,Kuruppantara,KRPP,Kottayam,Kerala,NSG 6,1717215.0,130730.0,4705.0,358.0,
+Thiruvananthapuram,Kalamasseri,KLMR,Ernakulam,Kerala,NSG 6,1683360.0,65322.0,4612.0,179.0,
+Thiruvananthapuram,Ollur,OLR,Thrissur,Kerala,NSG 6,1562120.0,97354.0,4280.0,267.0,
+Thiruvananthapuram,Ochira,OCR,Kollam,Kerala,NSG 6,1528715.0,55621.0,4188.0,152.0,
+Thiruvananthapuram,Kaniapuram (FLAG),KXP,Thiruvananthapuram,Kerala,NSG 6,1373151.0,73142.0,3762.0,200.0,
+Thiruvananthapuram,Murukkampuzha,MQU,Thiruvananthapuram,Kerala,NSG 6,1366957.0,39658.0,3745.0,109.0,
+Thiruvananthapuram,Perinad,PRND,Kollam,Kerala,NSG 6,1291540.0,45812.0,3538.0,126.0,
+Thiruvananthapuram,Karukutty,KUC,Ernakulam,Kerala,NSG 6,1251935.0,169055.0,3430.0,463.0,
+Thiruvananthapuram,Edavai (FLAG),EVA,Thiruvananthapuram,Kerala,NSG 6,1097141.0,144476.0,3006.0,396.0,
+Thiruvananthapuram,Mulagunnathukavu,MGK,Thrissur,Kerala,NSG 6,1089365.0,66749.0,2985.0,183.0,
+Thiruvananthapuram,Vallatholnagar,VTK,Thrissur,Kerala,NSG 6,752505.0,37135.0,2062.0,102.0,
+Thiruvananthapuram,Chingavanam,CGV,Kottayam,Kerala,NSG 6,652825.0,31055.0,1789.0,85.0,
+Thiruvananthapuram,Nemam,NEM,Thiruvananthapuram,Kerala,NSG 6,403685.0,35534.0,1106.0,97.0,
+Thiruvananthapuram,Kumbalam,KUMM,Ernakulam,Kerala,NSG 6,290895.0,24044.0,797.0,66.0,
+Thiruvananthapuram,Cheppad,CHPD,Alappuzha,Kerala,NSG 6,260285.0,21609.0,713.0,59.0,
+Thiruvananthapuram,Sengulam,SGLM,Tirunelveli,Tamil Nadu,NSG 6,54315.0,514.0,149.0,1.0,
+Thiruvananthapuram,North panakudi,NPK,Tirunelveli,Tamil Nadu,NSG 6,9850.0,698.0,27.0,2.0,
+Thiruvananthapuram,Kochi harbour terminus,CHTS,Ernakulam,Kerala,NSG 6,30.0,1.0,0.0,0.0,
+Thiruvananthapuram,Divine nagar (HALT),DINR,Thrissur,Kerala,HG 1,4087419.0,77138.0,11198.0,211.0,
+Thiruvananthapuram,Koratti angadi (HALT),KRAN,Thrissur,Kerala,HG 1,1062230.0,136858.0,2910.0,375.0,
+Thiruvananthapuram,Munroturuttu (HALT),MQO,Kollam,Kerala,HG 2,1706691.0,130994.0,4676.0,359.0,
+Thiruvananthapuram,Dhanuvachapuram (HALT),DAVM,Thiruvananthapuram,Kerala,HG 2,1360256.0,186413.0,3727.0,511.0,
+Thiruvananthapuram,Cheriyanad (HALT),CYN,Alappuzha,Kerala,HG 2,1316288.0,62324.0,3606.0,171.0,
+Thiruvananthapuram,Kulitturai west (HALT),KZTW,Kanniyakumari,Tamil Nadu,HG 2,988710.0,91540.0,2709.0,251.0,
+Thiruvananthapuram,Balaramapuram (FLAG),BRAM,Thiruvananthapuram,Kerala,HG 2,737050.0,95218.0,2019.0,261.0,
+Thiruvananthapuram,Nellayi (HALT),NYI,Thrissur,Kerala,HG 2,567890.0,60656.0,1556.0,166.0,
+Thiruvananthapuram,Iravipuram (HALT),IRP,Kollam,Kerala,HG 2,564170.0,16131.0,1546.0,44.0,
+Thiruvananthapuram,Kanjiramittam (HALT),KPTM,Ernakulam,Kerala,HG 2,504740.0,58116.0,1383.0,159.0,
+Thiruvananthapuram,Amaravila (HALT),AMVA,Thiruvananthapuram,Kerala,HG 2,478405.0,91474.0,1311.0,251.0,
+Thiruvananthapuram,Palliyadi (HALT),PYD,Kanniyakumari,Tamil Nadu,HG 2,449710.0,45271.0,1232.0,124.0,
+Thiruvananthapuram,Mullurcarai (HALT),MUC,Thrissur,Kerala,HG 2,417705.0,29079.0,1144.0,80.0,
+Thiruvananthapuram,Tumboli (HALT),TMPY,Alappuzha,Kerala,HG 2,274540.0,18157.0,752.0,50.0,
+Thiruvananthapuram,Chovvara (HALT),CWR,Ernakulam,Kerala,HG 2,251525.0,26330.0,689.0,72.0,
+Thiruvananthapuram,Kalavur (HALT),KAVR,Alappuzha,Kerala,HG 2,245395.0,22925.0,672.0,63.0,
+Thiruvananthapuram,Punnapra (HALT),PNPR,Alappuzha,Kerala,HG 2,183690.0,7395.0,503.0,20.0,
+Thiruvananthapuram,Vayalar (HALT),VAY,Alappuzha,Kerala,HG 2,155200.0,31271.0,425.0,86.0,
+Thiruvananthapuram,Virani alur (HALT),VRLR,Kanniyakumari,Tamil Nadu,HG 2,147705.0,10223.0,405.0,28.0,
+Thiruvananthapuram,Perunguzhi (HALT),PGZ,Thiruvananthapuram,Kerala,HG 2,116070.0,15513.0,318.0,43.0,
+Thiruvananthapuram,Veli (HALT),VELI,Thiruvananthapuram,Kerala,HG 2,40875.0,2135.0,112.0,6.0,
+Thiruvananthapuram,Karuvatta (HALT),KVTA,Alappuzha,Kerala,HG 2,0.0,0.0,0.0,0.0,
+Thiruvananthapuram,Chottanikara road (HALT),KFE,Ernakulam,Kerala,HG 3,244130.0,12141.0,669.0,33.0,
+Thiruvananthapuram,Takazhi (HALT),TZH,Alappuzha,Kerala,HG 3,177915.0,10947.0,487.0,30.0,
+Thiruvananthapuram,Tiruvizha (HALT),TRVZ,Alappuzha,Kerala,HG 3,159790.0,30193.0,438.0,83.0,
+Thiruvananthapuram,Kumaranallur (HALT),KFQ,Kottayam,Kerala,HG 3,158205.0,4546.0,433.0,12.0,
+Thiruvananthapuram,Ezhupunna (HALT),EZP,Alappuzha,Kerala,HG 3,132915.0,25160.0,364.0,69.0,
+Thiruvananthapuram,Kappil (HALT),KFI,Thiruvananthapuram,Kerala,HG 3,127565.0,6611.0,349.0,18.0,
+Thiruvananthapuram,Aroor (HALT),AROR,Alappuzha,Kerala,HG 3,126200.0,17068.0,346.0,47.0,
+Thiruvananthapuram,Kaduturutty (HALT),KDTY,Kottayam,Kerala,HG 3,90410.0,4589.0,248.0,13.0,
+Thiruvananthapuram,Akathumuri (HALT),AMY,Thiruvananthapuram,Kerala,HG 3,89000.0,2984.0,244.0,8.0,
+Thiruvananthapuram,Kavalkinaru (HALT),KVLK,Tirunelveli,Tamil Nadu,HG 3,33120.0,666.0,91.0,2.0,
+Thiruvananthapuram,Tovalai (HALT),THX,Kanniyakumari,Tamil Nadu,HG 3,10000.0,263.0,27.0,1.0,
+Thiruvananthapuram,Melappalayam (HALT),MP,Tirunelveli,Tamil Nadu,HG 3,0.0,0.0,0.0,0.0,
+Chennai,Acharapakkam,ACK,,Tamil Nadu,HG 2,,,,,
+Chennai,Akkampet,AKAT,,Tamil Nadu,HG 2,,,,,
+Chennai,Ambattur,ABU,,Tamil Nadu,SG 3,,,,,
+Chennai,Ambur,AB,,Tamil Nadu,NSG 5,,,,,
+Chennai,Annanagar,ANNG,,Tamil Nadu,NSG 6,,,,,
+Chennai,Annanur,ANNR,,Tamil Nadu,SG 3,,,,,
+Chennai,Anuppambatttu,APB,,Tamil Nadu,SG 3,,,,,
+Chennai,Anvarthikhanpeta,AVN,,Tamil Nadu,NSG 6,,,,,
+Chennai,Arakkonam Jn,AJJ,,Tamil Nadu,NSG 2,,,,,
+Chennai,Arambakkam,AKM,,Tamil Nadu,NSG 6,,,,,
+Chennai,Athipattu,AIP,,Tamil Nadu,SG 3,,,,,
+Chennai,Athipatu pudunagar,AIPP,,Tamil Nadu,SG 3,,,,,
+Chennai,Avadi,AVD,,Tamil Nadu,NSG 2,,,,,
+Chennai,Basinbridge,BBQ,,Tamil Nadu,SG 3,,,,,
+Chennai,Chengalpattu Jn,CGL,,Tamil Nadu,NSG 2,,,,,
+Chennai,Chennai beach,MSB,,Tamil Nadu,SG 1,,,,,
+Chennai,Chennai Central,MAS,,Tamil Nadu,NSG 1,,,,,
+Chennai,Chennai Chetpet,MSC,,Tamil Nadu,SG 3,,,,,
+Chennai,Chennai Egmore,MS,,Tamil Nadu,NSG 1,,,,,
+Chennai,Chennai Fort,MSF,,Tamil Nadu,SG 3,,,,,
+Chennai,Chennai Park,MPK,,Tamil Nadu,SG 3,,,,,
+Chennai,Chepauk,MCPK,,Tamil Nadu,SG 3,,,,,
+Chennai,Chintadripet,MCPT,,Tamil Nadu,SG 3,,,,,
+Chennai,Chitteri,CTRE,,Tamil Nadu,NSG 6,,,,,
+Chennai,Chrompet,CMP,,Tamil Nadu,SG 3,,,,,
+Chennai,Doravarichatram,DVR,,Tamil Nadu,NSG 6,,,,,
+Chennai,Egattur,EGT,,Tamil Nadu,SG 3,,,,,
+Chennai,Ekambarakuppam,EKM,,Tamil Nadu,NSG 5,,,,,
+Chennai,Elavur,ELR,,Tamil Nadu,NSG 6,,,,,
+Chennai,Ennore,ENR,,Tamil Nadu,SG 3,,,,,
+Chennai,Greenwaysroad,GWYR,,Tamil Nadu,SG 3,,,,,
+Chennai,Gudiyattam,GYM,,Tamil Nadu,NSG 5,,,,,
+Chennai,Guduvancheri,GI,,Tamil Nadu,NSG 3,,,,,
+Chennai,Guindy,GDY,,Tamil Nadu,SG 2,,,,,
+Chennai,Gummidipundi,GPD,,Tamil Nadu,SG 3,,,,,
+Chennai,Hindu college,HC,,Tamil Nadu,SG 3,,,,,
+Chennai,Ichchiputtur,IPT,,Tamil Nadu,HG 3,,,,,
+Chennai,Indiranagar,INDR,,Tamil Nadu,SG 3,,,,,
+Chennai,Jolarpet,JTJ,,Tamil Nadu,NSG 3,,,,,
+Chennai,Kadambattur,KBT,,Tamil Nadu,SG 3,,,,,
+Chennai,Kanchipuram,CJ,,Tamil Nadu,NSG 4,,,,,
+Chennai,Kanchipuram east,CJE,,Tamil Nadu,HG 1,,,,,
+Chennai,Karunguzhi,KGZ,,Tamil Nadu,NSG 6,,,,,
+Chennai,Kasthuribanagar,KTBR,,Tamil Nadu,SG 3,,,,,
+Chennai,Kathivakkam,KAVM,,Tamil Nadu,SG 3,,,,,
+Chennai,Katpadi Jn,KPD,,Tamil Nadu,NSG 2,,,,,
+Chennai,Kattangalathur,CTM,,Tamil Nadu,NSG 5,,,,,
+Chennai,Kavanur,KVN,,Tamil Nadu,NSG 6,,,,,
+Chennai,Kavaraipettai,KVP,,Tamil Nadu,SG 3,,,,,
+Chennai,Kettandappatti,KDY,,Tamil Nadu,NSG 6,,,,,
+Chennai,Kodambakkam,MKK,,Tamil Nadu,SG 3,,,,,
+Chennai,Korattur,KOTR,,Tamil Nadu,SG 3,,,,,
+Chennai,Korukkupet,KOK,,Tamil Nadu,SG 3,,,,,
+Chennai,Kotturupuram,KTPM,,Tamil Nadu,SG 3,,,,,
+Chennai,Latteri,LTI,,Tamil Nadu,NSG 6,,,,,
+Chennai,Lighthouse,MLHS,,Tamil Nadu,SG 3,,,,,
+Chennai,Maduranthakam,MMK,,Tamil Nadu,NSG 6,,,,,
+Chennai,Mailam,MTL,,Tamil Nadu,NSG 6,,,,,
+Chennai,Mambalam,MBM,,Tamil Nadu,NSG 3,,,,,
+Chennai,Manavur,MAF,,Tamil Nadu,SG 3,,,,,
+Chennai,Mandaiveli,MNDY,,Tamil Nadu,SG 3,,,,,
+Chennai,Maraimalai nagar,MMNK,,Tamil Nadu,HG 1,,,,,
+Chennai,Melalathur,MEH,,Tamil Nadu,HG 2,,,,,
+Chennai,Melmaruvattur,MLMR,,Tamil Nadu,NSG 4,,,,,
+Chennai,Melpatti,MPI,,Tamil Nadu,NSG 6,,,,,
+Chennai,Minambakkam,MN,,Tamil Nadu,SG 3,,,,,
+Chennai,Minjur,MJR,,Tamil Nadu,SG 3,,,,,
+Chennai,Moore Market complex,MASS,,Tamil Nadu,SG 3,,,,,
+Chennai,Mosur,MSU,,Tamil Nadu,SG 3,,,,,
+Chennai,Mukundarayapuram,MCN,,Tamil Nadu,NSG 6,,,,,
+Chennai,Mundakanni Amman koil,MKAK,,Tamil Nadu,SG 3,,,,,
+Chennai,Mundiyambakkam,MYP,,Tamil Nadu,NSG 6,,,,,
+Chennai,Nagari,NG,,Tamil Nadu,NSG 6,,,,,
+Chennai,Nandiambakkam,NPKM,,Tamil Nadu,SG 3,,,,,
+Chennai,Nathapettai,NTT,,Tamil Nadu,HG 3,,,,,
+Chennai,Nayudupeta,NYP,,Tamil Nadu,NSG 5,,,,,
+Chennai,Nemilicherry,NEC,,Tamil Nadu,SG 3,,,,,
+Chennai,Nungambakkam,NBK,,Tamil Nadu,SG 3,,,,,
+Chennai,Odur,ODR,,Tamil Nadu,NSG 6,,,,,
+Chennai,Olakkur,OLA,,Tamil Nadu,NSG 6,,,,,
+Chennai,Ottivakkam,OV,,Tamil Nadu,NSG 6,,,,,
+Chennai,Pachchakuppam,PCKM,,Tamil Nadu,NSG 6,,,,,
+Chennai,Padalam,PTM,,Tamil Nadu,HG 3,,,,,
+Chennai,Padi,PADI,,Tamil Nadu,HG 3,,,,,
+Chennai,Palayasivaram,PYV,,Tamil Nadu,HG 3,,,,,
+Chennai,Pallavaram,PV,,Tamil Nadu,SG 3,,,,,
+Chennai,Palur,PALR,,Tamil Nadu,NSG 6,,,,,
+Chennai,Paranur,PWU,,Tamil Nadu,HG 1,,,,,
+Chennai,Parktown,MPKT,,Tamil Nadu,SG 3,,,,,
+Chennai,Pattabiram,PAB,,Tamil Nadu,SG 3,,,,,
+Chennai,Pattabiram E-Depot,PRES,,Tamil Nadu,SG 3,,,,,
+Chennai,Pattabiram military siding,PTMS,,Tamil Nadu,SG 3,,,,,
+Chennai,Pattravakkam,PVM,,Tamil Nadu,SG 3,,,,,
+Chennai,Pazhavanthangal,PZA,,Tamil Nadu,SG 2,,,,,
+Chennai,Pedapariya,PYA,,Tamil Nadu,NSG 6,,,,,
+Chennai,Perambur,PER,,Tamil Nadu,NSG 3,,,,,
+Chennai,Perambur carriage works,PCW,,Tamil Nadu,SG 3,,,,,
+Chennai,Perambur loco works,PEW,,Tamil Nadu,SG 3,,,,,
+Chennai,Perani,PEI,,Tamil Nadu,NSG 6,,,,,
+Chennai,Perunglathur,PRGL,,Tamil Nadu,NSG 3,,,,,
+Chennai,Perungudi,PRGD,,Tamil Nadu,SG 3,,,,,
+Chennai,Polireddipalem,PEL,,Tamil Nadu,NSG 6,,,,,
+Chennai,Ponneri,PON,,Tamil Nadu,SG 3,,,,,
+Chennai,Ponpadi,POI,,Tamil Nadu,NSG 6,,,,,
+Chennai,Potheri,POTI,,Tamil Nadu,HG 1,,,,,
+Chennai,Pudi,PUDI,,Tamil Nadu,NSG 6,,,,,
+Chennai,Puliamangalam,PLMG,,Tamil Nadu,SG 3,,,,,
+Chennai,Putlur,PTLR,,Tamil Nadu,SG 3,,,,,
+Chennai,Puttur,PUT,,Tamil Nadu,NSG 5,,,,,
+Chennai,Reddipalayam,RDY,,Tamil Nadu,HG 3,,,,,
+Chennai,Royapuram,RPM,,Tamil Nadu,SG 3,,,,,
+Chennai,Saidapet,SP,,Tamil Nadu,SG 3,,,,,
+Chennai,Senjipanambakkam,SPAM,,Tamil Nadu,SG 3,,,,,
+Chennai,Sevur,SVUR,,Tamil Nadu,NSG 6,,,,,
+Chennai,Sevvapet road,SVR,,Tamil Nadu,SG 3,,,,,
+Chennai,Sholinghur,SHU,,Tamil Nadu,NSG 5,,,,,
+Chennai,Singaperumalkoil,SKL,,Tamil Nadu,NSG 4,,,,,
+Chennai,St.Thomas Mount,STM,,Tamil Nadu,SG 3,,,,,
+Chennai,Sullurupeta,SPE,,Tamil Nadu,NSG 5,,,,,
+Chennai,Tada,TADA,,Tamil Nadu,NSG 6,,,,,
+Chennai,Taduku,TDK,,Tamil Nadu,NSG 6,,,,,
+Chennai,Takkolam,TKO,,Tamil Nadu,HG 3,,,,,
+Chennai,Tambaram,TBM,,Tamil Nadu,NSG 1,,,,,
+Chennai,Tambaram sanitorium,TBMS,,Tamil Nadu,SG 3,,,,,
+Chennai,Taramani,TRMN,,Tamil Nadu,SG 3,,,,,
+Chennai,Thalangai,TUG,,Tamil Nadu,NSG 6,,,,,
+Chennai,Thirumullaivoil,TMVL,,Tamil Nadu,SG 3,,,,,
+Chennai,Tindivanam,TMV,,Tamil Nadu,NSG 5,,,,,
+Chennai,Tirumalpur,TMLP,,Tamil Nadu,NSG 6,,,,,
+Chennai,Tirumayilai,MTMY,,Tamil Nadu,SG 3,,,,,
+Chennai,Tiruninravur,TI,,Tamil Nadu,SG 3,,,,,
+Chennai,Tirusulam,TLM,,Tamil Nadu,SG 3,,,,,
+Chennai,Tiruttani,TRT,,Tamil Nadu,NSG 4,,,,,
+Chennai,Tiruvalam,THL,,Tamil Nadu,NSG 6,,,,,
+Chennai,Tiruvalangadu,TO,,Tamil Nadu,SG 3,,,,,
+Chennai,Tiruvallikkeni,MTCN,,Tamil Nadu,SG 3,,,,,
+Chennai,Tiruvallur,TRL,,Tamil Nadu,NSG 2,,,,,
+Chennai,Tiruvanmiyur,TYMR,,Tamil Nadu,SG 3,,,,,
+Chennai,Tiruvottiyur,TVT,,Tamil Nadu,SG 3,,,,,
+Chennai,Tondiarpet,TNP,,Tamil Nadu,SG 3,,,,,
+Chennai,Tozhupedu,TZD,,Tamil Nadu,NSG 6,,,,,
+Chennai,Urapakkam,UPM,,Tamil Nadu,HG 1,,,,,
+Chennai,Valathur,VLT,,Tamil Nadu,NSG 6,,,,,
+Chennai,Vandalur,VDR,,Tamil Nadu,NSG 5,,,,,
+Chennai,Vaniyambadi,VN,,Tamil Nadu,NSG 5,,,,,
+Chennai,Velacheri,VLCY,,Tamil Nadu,SG 2,,,,,
+Chennai,Venkatanarasimharajuvaripeta,VKZ,,Tamil Nadu,HG 3,,,,,
+Chennai,Vepagunta,VGA,,Tamil Nadu,NSG 6,,,,,
+Chennai,Vepambattu,VEU,,Tamil Nadu,SG 3,,,,,
+Chennai,Vikravanandi,VVN,,Tamil Nadu,NSG 6,,,,,
+Chennai,Villiambakkam,VB,,Tamil Nadu,HG 2,,,,,
+Chennai,Villivakkam,VLK,,Tamil Nadu,SG 3,,,,,
+Chennai,Vinnamangalam,VGM,,Tamil Nadu,NSG 6,,,,,
+Chennai,Virinchipuram,VJ,,Tamil Nadu,HG 2,,,,,
+Chennai,VOC nagar,VOC,,Tamil Nadu,SG 3,,,,,
+Chennai,Vyasarpadi jeeva,VJM,,Tamil Nadu,SG 3,,,,,
+Chennai,Walajabad,WJ,,Tamil Nadu,NSG 6,,,,,
+Chennai,Walajaroad,WJR,,Tamil Nadu,NSG 5,,,,,
+Chennai,Washermanpet,WST,,Tamil Nadu,SG 3,,,,,
+Chennai,Wimconagar,WCN,,Tamil Nadu,SG 3,,,,,

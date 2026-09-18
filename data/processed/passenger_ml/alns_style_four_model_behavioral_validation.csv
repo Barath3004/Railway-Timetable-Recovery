@@ -1,0 +1,5 @@
+model,expected_order,predicted_order,candidate_test
+Random Forest,A > B > C,A > B > C,PASS
+Extra Trees,A > B > C,A > B > C,PASS
+Gradient Boosting,A > B > C,A > B > C,PASS
+HistGradientBoosting,A > B > C,A > B > C,PASS

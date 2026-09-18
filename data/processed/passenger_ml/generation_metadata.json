@@ -1,0 +1,142 @@
+{
+    "generation_timestamp": "2026-09-10T01:06:34.045499",
+    "random_seed": 42,
+    "number_of_scenarios": 50000,
+    "formula_version": "v1.2-interpretable-synthetic",
+    "formula_description": "BaseTypeFactor is applied only through DisruptionExposureFactor. SeverityFactor contains only PeakMultiplier and PriorityMultiplier to avoid double-counting disruption type.",
+    "time_profile_version": "v1.1-7-period-normalized",
+    "raw_time_weight_sum": 0.9600000000000001,
+    "normalized_time_weight_sum": 1.0,
+    "time_period_weights": {
+        "Overnight": 0.041666666666666664,
+        "Morning build-up": 0.14583333333333334,
+        "Morning peak": 0.22916666666666666,
+        "Midday": 0.14583333333333334,
+        "Evening peak": 0.24999999999999997,
+        "Evening": 0.14583333333333334,
+        "Night": 0.041666666666666664
+    },
+    "noise_range": [
+        -0.1,
+        0.1
+    ],
+    "train_exposure_methodology": "TimeDependentStationDemand x TimetableGroundedTrainServiceShare x TrainLoadFactor",
+    "train_selection_methodology": "Train selected from timetable services operationally relevant to generated station/time/day scenario",
+    "train_service_share_methodology": "Capacity-weighted share among time-relevant timetable services",
+    "disruption_factor_methodology": "DisruptionBaseFactor x TrainCountMultiplier x DurationMultiplier",
+    "severity_factor_methodology": "PeakMultiplier x PriorityMultiplier",
+    "target_formula": "AffectedPassengers = TrainPassengerExposure x DisruptionExposureFactor; PassengerDelayMinutes = AffectedPassengers x DelayMinutes x SeverityFactor x (1 + ControlledNoise)",
+    "load_factor_ranges": {
+        "EMU": [
+            1.1,
+            1.6
+        ],
+        "MEMU": [
+            1.0,
+            1.45
+        ],
+        "Passenger": [
+            0.85,
+            1.25
+        ],
+        "Express": [
+            0.75,
+            1.15
+        ],
+        "Mail": [
+            0.75,
+            1.15
+        ],
+        "Superfast": [
+            0.7,
+            1.1
+        ],
+        "Shatabdi": [
+            0.7,
+            1.05
+        ],
+        "Jan Shatabdi": [
+            0.75,
+            1.1
+        ],
+        "Duronto": [
+            0.7,
+            1.05
+        ],
+        "Rajdhani": [
+            0.65,
+            1.0
+        ],
+        "Garib Rath": [
+            0.75,
+            1.1
+        ]
+    },
+    "train_capacity_ratios": {
+        "EMU": 1.5,
+        "MEMU": 1.3,
+        "Passenger": 1.1,
+        "Express": 1.0,
+        "Mail": 1.0,
+        "Superfast": 0.95,
+        "Shatabdi": 0.8,
+        "Jan Shatabdi": 0.9,
+        "Duronto": 0.85,
+        "Rajdhani": 0.75,
+        "Garib Rath": 0.95
+    },
+    "disruption_base_factors": {
+        "PLATFORM_CLOSURE": 0.9,
+        "TRACK_FAILURE": 1.4,
+        "SIGNAL_FAILURE": 1.15,
+        "PLANNED_MAINTENANCE": 0.8,
+        "OTHER_RESOURCE_DISRUPTION": 1.0
+    },
+    "delay_distribution": {
+        "1.0-5.0": 0.2,
+        "5.0-10.0": 0.25,
+        "10.0-20.0": 0.25,
+        "20.0-30.0": 0.15,
+        "30.0-60.0": 0.1,
+        "60.0-120.0": 0.05
+    },
+    "feature_list": [
+        "station_code",
+        "station_category",
+        "station_daily_passengers",
+        "day_of_week",
+        "day_type",
+        "hour",
+        "minute",
+        "time_period",
+        "is_peak_period",
+        "train_type",
+        "train_priority",
+        "disruption_type",
+        "disruption_duration_minutes",
+        "delay_minutes",
+        "affected_train_count"
+    ],
+    "primary_target": "passenger_delay_minutes",
+    "secondary_target": "affected_passengers",
+    "target_leakage_columns": [],
+    "train_validation_test_split": {
+        "train_ratio": 0.7,
+        "val_ratio": 0.15,
+        "test_ratio": 0.15,
+        "train_count": 35000,
+        "val_count": 7500,
+        "test_count": 7500
+    },
+    "validation_summary": {
+        "total_missing": 0,
+        "duplicate_scenarios": 0,
+        "time_weight_sum": 1.0,
+        "noise_min": -0.1,
+        "noise_max": 0.09999,
+        "train_grounding_pass": true,
+        "target_leakage_pass": true,
+        "relationship_validation_pass": true,
+        "baseline_ml_test_r2": 0.8871500500583203
+    }
+}

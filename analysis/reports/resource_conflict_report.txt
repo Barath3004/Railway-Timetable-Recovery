@@ -1,0 +1,3874 @@
+================================================================================
+RAILWAY TIMETABLE / RESOURCE VALIDATION REPORT
+================================================================================
+
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Timetable records : 2469
+Allocation records: 2445
+
+================================================================================
+TIMETABLE SAMPLE
+================================================================================
+{
+  "arrival": "None",
+  "day": 1,
+  "train_name": "Chennai Central-Kollam SF Special",
+  "station_name": "CHENNAI CENTRAL",
+  "station_code": "MAS",
+  "id": 9033,
+  "train_number": "06001",
+  "departure": "15:15:00",
+  "stop_number": 1,
+  "platform_number": 4,
+  "platform_type": "MAINLINE",
+  "platform_allocated_by": "AUTO"
+}
+
+================================================================================
+RESOURCE ALLOCATION SAMPLE
+================================================================================
+{
+  "allocation_id": "RA000001",
+  "resource_id": "ABU-P1",
+  "resource_type": "PLATFORM",
+  "station_code": "ABU",
+  "station_name": "AMBATTUR",
+  "platform_number": 1,
+  "platform_type": "MAINLINE",
+  "day": 1,
+  "allocation_end_day": 1,
+  "release_day": 1,
+  "timetable_record_id": 133378,
+  "allocation_start": "04:26:00",
+  "allocation_end": "04:27:00",
+  "occupancy_minutes": 1,
+  "buffer_minutes": 5,
+  "release_time": "04:32:00",
+  "allocation_status": "ALLOCATED",
+  "allocation_source": "AUTO_FALLBACK"
+}
+
+================================================================================
+RELATIONSHIP VALIDATION
+================================================================================
+Unique timetable IDs: 2469
+Allocations with missing timetable reference: 0
+
+================================================================================
+RESOURCE STATISTICS
+================================================================================
+Resource types:
+  PLATFORM: 2445
+
+Unique physical resources: 114
+Unique stations: 32
+
+================================================================================
+ZERO-DURATION ALLOCATIONS
+================================================================================
+Total: 1276
+  allocation_id=RA000003 resource=ABU-P1 time=06:12:00 timetable=454661
+  allocation_id=RA000004 resource=ABU-P1 time=06:28:00 timetable=364496
+  allocation_id=RA000005 resource=ABU-P1 time=06:37:00 timetable=245156
+  allocation_id=RA000006 resource=ABU-P1 time=07:02:00 timetable=376518
+  allocation_id=RA000007 resource=ABU-P1 time=07:28:00 timetable=501264
+  allocation_id=RA000008 resource=ABU-P1 time=07:37:00 timetable=198678
+  allocation_id=RA000009 resource=ABU-P1 time=08:25:00 timetable=369092
+  allocation_id=RA000010 resource=ABU-P1 time=09:20:00 timetable=90898
+  allocation_id=RA000011 resource=ABU-P1 time=10:24:00 timetable=488769
+  allocation_id=RA000012 resource=ABU-P1 time=10:46:00 timetable=478843
+  allocation_id=RA000014 resource=ABU-P1 time=11:26:00 timetable=501395
+  allocation_id=RA000015 resource=ABU-P1 time=11:44:00 timetable=136968
+  allocation_id=RA000016 resource=ABU-P1 time=12:08:00 timetable=266001
+  allocation_id=RA000017 resource=ABU-P1 time=12:26:00 timetable=280520
+  allocation_id=RA000018 resource=ABU-P1 time=13:02:00 timetable=292856
+  allocation_id=RA000019 resource=ABU-P1 time=13:34:00 timetable=209344
+  allocation_id=RA000020 resource=ABU-P1 time=13:45:00 timetable=518992
+  allocation_id=RA000021 resource=ABU-P1 time=14:03:00 timetable=228529
+  allocation_id=RA000022 resource=ABU-P1 time=14:24:00 timetable=489577
+  allocation_id=RA000023 resource=ABU-P1 time=14:43:00 timetable=298910
+
+================================================================================
+INVALID TIME INTERVALS
+================================================================================
+Total: 1
+  END_BEFORE_START | allocation=RA002433 | resource=VRI-P1 | start=23:55:00 | end=00:05:00
+
+================================================================================
+RESOURCE CONFLICT ANALYSIS
+================================================================================
+Total overlapping allocation pairs: 76
+Resources containing conflicts: 23
+
+TOP CONFLICTING RESOURCES
+  KPD-P1: 12
+  JTJ-P1: 10
+  MAS-P1: 9
+  MAS-P2: 5
+  MS-P1: 5
+  AJJ-P1: 4
+  TEN-P1: 4
+  TVC-P1: 4
+  MAS-P3: 3
+  NCJ-P1: 3
+  DG-P1: 2
+  MDU-P1: 2
+  VAK-P1: 2
+  VPT-P1: 2
+  CVP-P1: 1
+  ERL-P1: 1
+  JTJ-P2: 1
+  KPD-P2: 1
+  QLN-P1: 1
+  TBM-P1: 1
+  TPJ-P1: 1
+  VM-P1: 1
+  VRI-P1: 1
+
+================================================================================
+DETAILED CONFLICTS — FIRST 100
+================================================================================
+
+--------------------------------------------------------------------------------
+CONFLICT #1
+Resource ID: AJJ-P1
+Resource type: PLATFORM
+Station: AJJ (ARAKKONAM)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000175
+  timetable_record_id: 157326
+  allocation_start: 05:23:00
+  allocation_end: 05:25:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 05:35:00
+
+  TIMETABLE A
+    arrival: 05:23:00
+    day: 2
+    train_name: Kaveri Express
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 16221
+    departure: 05:25:00
+    platform_number: 6
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000193
+  timetable_record_id: 482747
+  allocation_start: 05:23:00
+  allocation_end: 05:25:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 05:35:00
+
+  TIMETABLE B
+    arrival: 05:23:00
+    day: 3
+    train_name: MUZAFFARPUR - YESVANTPUR Weekly Exp
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 15228
+    departure: 05:25:00
+    platform_number: 8
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #2
+Resource ID: AJJ-P1
+Resource type: PLATFORM
+Station: AJJ (ARAKKONAM)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000129
+  timetable_record_id: 488789
+  allocation_start: 11:13:00
+  allocation_end: 11:15:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 11:25:00
+
+  TIMETABLE A
+    arrival: 11:13:00
+    day: 1
+    train_name: CHENNAI CENT - SAINAGAR SHIRDI SF Exp
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 22601
+    departure: 11:15:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000195
+  timetable_record_id: 122752
+  allocation_start: 11:13:00
+  allocation_end: 11:15:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 11:25:00
+
+  TIMETABLE B
+    arrival: 11:13:00
+    day: 3
+    train_name: Jaipur-Coimbatore Express
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 12970
+    departure: 11:15:00
+    platform_number: 7
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #3
+Resource ID: AJJ-P1
+Resource type: PLATFORM
+Station: AJJ (ARAKKONAM)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000188
+  timetable_record_id: 54275
+  allocation_start: 15:00:00
+  allocation_end: 15:05:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 15:15:00
+
+  TIMETABLE A
+    arrival: 15:00:00
+    day: 2
+    train_name: Mumbai - Chennai Express
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 11041
+    departure: 15:05:00
+    platform_number: 6
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000196
+  timetable_record_id: 491069
+  allocation_start: 15:03:00
+  allocation_end: 15:05:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 15:15:00
+
+  TIMETABLE B
+    arrival: 15:03:00
+    day: 3
+    train_name: PATLIPUTRA - BANGALORE Sanghamitra SF Exp
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 12296
+    departure: 15:05:00
+    platform_number: 7
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #4
+Resource ID: AJJ-P1
+Resource type: PLATFORM
+Station: AJJ (ARAKKONAM)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000141
+  timetable_record_id: 381496
+  allocation_start: 15:43:00
+  allocation_end: 15:45:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 15:55:00
+
+  TIMETABLE A
+    arrival: 15:43:00
+    day: 1
+    train_name: Coimbatore-Jaipur Express
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 12969
+    departure: 15:45:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000197
+  timetable_record_id: 479841
+  allocation_start: 15:43:00
+  allocation_end: 15:45:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 15:55:00
+
+  TIMETABLE B
+    arrival: 15:43:00
+    day: 3
+    train_name: DARBHANGA - MYSORE BAGMATI SF Exp
+    station_name: ARAKKONAM
+    station_code: AJJ
+    train_number: 12577
+    departure: 15:45:00
+    platform_number: 7
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #5
+Resource ID: CVP-P1
+Resource type: PLATFORM
+Station: CVP (KOVILPATTI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000601
+  timetable_record_id: 526856
+  allocation_start: 07:59:00
+  allocation_end: 08:00:00
+  occupancy_minutes: 1
+  buffer_minutes: 5
+  release_time: 08:05:00
+
+  TIMETABLE A
+    arrival: 07:59:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: KOVILPATTI
+    station_code: CVP
+    train_number: 12689
+    departure: 08:00:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000607
+  timetable_record_id: 529652
+  allocation_start: 07:59:00
+  allocation_end: 08:00:00
+  occupancy_minutes: 1
+  buffer_minutes: 5
+  release_time: 08:05:00
+
+  TIMETABLE B
+    arrival: 07:59:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: KOVILPATTI
+    station_code: CVP
+    train_number: 12665
+    departure: 08:00:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #6
+Resource ID: DG-P1
+Resource type: PLATFORM
+Station: DG (DINDIGUL JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000621
+  timetable_record_id: 277351
+  allocation_start: 02:15:00
+  allocation_end: 02:20:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 02:30:00
+
+  TIMETABLE A
+    arrival: 02:15:00
+    day: 2
+    train_name: Nagercoil-Coimbatore Express
+    station_name: DINDIGUL JN
+    station_code: DG
+    train_number: 16609
+    departure: 02:20:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000628
+  timetable_record_id: 530667
+  allocation_start: 02:15:00
+  allocation_end: 02:20:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 02:30:00
+
+  TIMETABLE B
+    arrival: 02:15:00
+    day: 3
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: DINDIGUL JN
+    station_code: DG
+    train_number: 12642
+    departure: 02:20:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #7
+Resource ID: DG-P1
+Resource type: PLATFORM
+Station: DG (DINDIGUL JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000623
+  timetable_record_id: 526838
+  allocation_start: 05:10:00
+  allocation_end: 05:15:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 05:25:00
+
+  TIMETABLE A
+    arrival: 05:10:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: DINDIGUL JN
+    station_code: DG
+    train_number: 12689
+    departure: 05:15:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000629
+  timetable_record_id: 529634
+  allocation_start: 05:10:00
+  allocation_end: 05:15:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 05:25:00
+
+  TIMETABLE B
+    arrival: 05:10:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: DINDIGUL JN
+    station_code: DG
+    train_number: 12665
+    departure: 05:15:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #8
+Resource ID: ERL-P1
+Resource type: PLATFORM
+Station: ERL (ERANIEL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000636
+  timetable_record_id: 95563
+  allocation_start: 06:13:00
+  allocation_end: 06:15:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 06:20:00
+
+  TIMETABLE A
+    arrival: 06:13:00
+    day: 1
+    train_name: Kanniyakumari-Mumbai CST Express
+    station_name: ERANIEL
+    station_code: ERL
+    train_number: 16382
+    departure: 06:15:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000658
+  timetable_record_id: 7925
+  allocation_start: 06:13:00
+  allocation_end: 06:15:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 06:20:00
+
+  TIMETABLE B
+    arrival: 06:13:00
+    day: 2
+    train_name: Coimbatore-Nagercoil Special
+    station_name: ERANIEL
+    station_code: ERL
+    train_number: 06617
+    departure: 06:15:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #9
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000709
+  timetable_record_id: 275437
+  allocation_start: 00:40:00
+  allocation_end: 00:45:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 00:55:00
+
+  TIMETABLE A
+    arrival: 00:40:00
+    day: 2
+    train_name: Kerala Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12625
+    departure: 00:45:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000737
+  timetable_record_id: 68329
+  allocation_start: 00:40:00
+  allocation_end: 00:45:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 00:55:00
+
+  TIMETABLE B
+    arrival: 00:40:00
+    day: 3
+    train_name: Kerala Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12626
+    departure: 00:45:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #10
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000739
+  timetable_record_id: 342904
+  allocation_start: 03:15:00
+  allocation_end: 03:20:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 03:30:00
+
+  TIMETABLE A
+    arrival: 03:15:00
+    day: 3
+    train_name: Rapti Sagar Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12511
+    departure: 03:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000751
+  timetable_record_id: 94977
+  allocation_start: 03:15:00
+  allocation_end: 03:20:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 03:30:00
+
+  TIMETABLE B
+    arrival: 03:15:00
+    day: 4
+    train_name: Raptisagar Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12521
+    departure: 03:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #11
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000670
+  timetable_record_id: 369050
+  allocation_start: 04:50:00
+  allocation_end: 04:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 05:05:00
+
+  TIMETABLE A
+    arrival: 04:50:00
+    day: 1
+    train_name: Yelagiri Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 16090
+    departure: 04:55:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000741
+  timetable_record_id: 477511
+  allocation_start: 04:50:00
+  allocation_end: 04:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 05:05:00
+
+  TIMETABLE B
+    arrival: 04:50:00
+    day: 3
+    train_name: BHAGALPUR - YESVANTPUR Anga SF Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12254
+    departure: 04:55:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #12
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000745
+  timetable_record_id: 492372
+  allocation_start: 08:18:00
+  allocation_end: 08:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 08:30:00
+
+  TIMETABLE A
+    arrival: 08:18:00
+    day: 3
+    train_name: GUWAHATI - BENGALURU (Kaziranga) SF Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12510
+    departure: 08:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000753
+  timetable_record_id: 478756
+  allocation_start: 08:18:00
+  allocation_end: 08:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 08:30:00
+
+  TIMETABLE B
+    arrival: 08:18:00
+    day: 4
+    train_name: DIBRUGARH - BENGALURU CITY Weekly Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 15902
+    departure: 08:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #13
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000676
+  timetable_record_id: 364538
+  allocation_start: 09:18:00
+  allocation_end: 09:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 09:30:00
+
+  TIMETABLE A
+    arrival: 09:18:00
+    day: 1
+    train_name: Kovai Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12675
+    departure: 09:20:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000730
+  timetable_record_id: 518565
+  allocation_start: 09:18:00
+  allocation_end: 09:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 09:30:00
+
+  TIMETABLE B
+    arrival: 09:18:00
+    day: 2
+    train_name: KAKINADA TOWN -BANGALORE Seshadri Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 17210
+    departure: 09:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #14
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000683
+  timetable_record_id: 547452
+  allocation_start: 12:10:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 110
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE A
+    arrival: 12:10:00
+    day: 1
+    train_name: ARAKKONAM - BANGALORE Passenger
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 56261
+    departure: 14:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000732
+  timetable_record_id: 118739
+  allocation_start: 12:48:00
+  allocation_end: 12:48:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 12:58:00
+
+  TIMETABLE B
+    arrival: 12:48:00
+    day: 2
+    train_name: Bilaspur Tirunelveli SF Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12787
+    departure: 12:48:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #15
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000683
+  timetable_record_id: 547452
+  allocation_start: 12:10:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 110
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE A
+    arrival: 12:10:00
+    day: 1
+    train_name: ARAKKONAM - BANGALORE Passenger
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 56261
+    departure: 14:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000747
+  timetable_record_id: 475438
+  allocation_start: 13:05:00
+  allocation_end: 13:10:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 13:20:00
+
+  TIMETABLE B
+    arrival: 13:05:00
+    day: 3
+    train_name: LUCKNOW - YESVANTPUR SF Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12540
+    departure: 13:10:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #16
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000683
+  timetable_record_id: 547452
+  allocation_start: 12:10:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 110
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE A
+    arrival: 12:10:00
+    day: 1
+    train_name: ARAKKONAM - BANGALORE Passenger
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 56261
+    departure: 14:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000748
+  timetable_record_id: 535124
+  allocation_start: 13:55:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE B
+    arrival: 13:55:00
+    day: 3
+    train_name: PATNA - ERNAKULAM Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 16360
+    departure: 14:00:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #17
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000683
+  timetable_record_id: 547452
+  allocation_start: 12:10:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 110
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE A
+    arrival: 12:10:00
+    day: 1
+    train_name: ARAKKONAM - BANGALORE Passenger
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 56261
+    departure: 14:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000733
+  timetable_record_id: 464001
+  allocation_start: 13:57:00
+  allocation_end: 13:57:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 14:07:00
+
+  TIMETABLE B
+    arrival: 13:57:00
+    day: 2
+    train_name: HOWRAH - YESVANTPUR AC Duronto Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12245
+    departure: 13:57:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #18
+Resource ID: JTJ-P1
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000748
+  timetable_record_id: 535124
+  allocation_start: 13:55:00
+  allocation_end: 14:00:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 14:10:00
+
+  TIMETABLE A
+    arrival: 13:55:00
+    day: 3
+    train_name: PATNA - ERNAKULAM Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 16360
+    departure: 14:00:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000733
+  timetable_record_id: 464001
+  allocation_start: 13:57:00
+  allocation_end: 13:57:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 14:07:00
+
+  TIMETABLE B
+    arrival: 13:57:00
+    day: 2
+    train_name: HOWRAH - YESVANTPUR AC Duronto Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12245
+    departure: 13:57:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #19
+Resource ID: JTJ-P2
+Resource type: PLATFORM
+Station: JTJ (JOLARPETTAI)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA000761
+  timetable_record_id: 474785
+  allocation_start: 13:18:00
+  allocation_end: 13:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 13:30:00
+
+  TIMETABLE A
+    arrival: 13:18:00
+    day: 1
+    train_name: YESVANTPUR - LUCKNOW SF Exp
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12539
+    departure: 13:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000794
+  timetable_record_id: 122775
+  allocation_start: 13:18:00
+  allocation_end: 13:20:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 13:30:00
+
+  TIMETABLE B
+    arrival: 13:18:00
+    day: 3
+    train_name: Jaipur-Coimbatore Express
+    station_name: JOLARPETTAI
+    station_code: JTJ
+    train_number: 12970
+    departure: 13:20:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #20
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000873
+  timetable_record_id: 10158
+  allocation_start: 00:30:00
+  allocation_end: 00:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 00:45:00
+
+  TIMETABLE A
+    arrival: 00:30:00
+    day: 2
+    train_name: Visakhapatnam-Kollam Sabarimalai Special
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 08569
+    departure: 00:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000900
+  timetable_record_id: 404754
+  allocation_start: 00:30:00
+  allocation_end: 00:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 00:45:00
+
+  TIMETABLE B
+    arrival: 00:30:00
+    day: 3
+    train_name: TATANAGAR - YESVANTPUR SF Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12889
+    departure: 00:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #21
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000901
+  timetable_record_id: 342891
+  allocation_start: 01:45:00
+  allocation_end: 01:50:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 02:00:00
+
+  TIMETABLE A
+    arrival: 01:45:00
+    day: 3
+    train_name: Rapti Sagar Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12511
+    departure: 01:50:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000914
+  timetable_record_id: 94964
+  allocation_start: 01:45:00
+  allocation_end: 01:50:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 02:00:00
+
+  TIMETABLE B
+    arrival: 01:45:00
+    day: 4
+    train_name: Raptisagar Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12521
+    departure: 01:50:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #22
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000889
+  timetable_record_id: 477569
+  allocation_start: 06:30:00
+  allocation_end: 07:05:00
+  occupancy_minutes: 35
+  buffer_minutes: 10
+  release_time: 07:15:00
+
+  TIMETABLE A
+    arrival: 06:30:00
+    day: 2
+    train_name: BENGALURU - NEW TINSUKIA Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15901
+    departure: 07:05:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000907
+  timetable_record_id: 513422
+  allocation_start: 06:50:00
+  allocation_end: 06:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 07:05:00
+
+  TIMETABLE B
+    arrival: 06:50:00
+    day: 3
+    train_name: GUWAHATI - TRIVANDRUM CENTRAL EXP
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12516
+    departure: 06:55:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #23
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000889
+  timetable_record_id: 477569
+  allocation_start: 06:30:00
+  allocation_end: 07:05:00
+  occupancy_minutes: 35
+  buffer_minutes: 10
+  release_time: 07:15:00
+
+  TIMETABLE A
+    arrival: 06:30:00
+    day: 2
+    train_name: BENGALURU - NEW TINSUKIA Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15901
+    departure: 07:05:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000916
+  timetable_record_id: 478743
+  allocation_start: 06:50:00
+  allocation_end: 06:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 07:05:00
+
+  TIMETABLE B
+    arrival: 06:50:00
+    day: 4
+    train_name: DIBRUGARH - BENGALURU CITY Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15902
+    departure: 06:55:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #24
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000907
+  timetable_record_id: 513422
+  allocation_start: 06:50:00
+  allocation_end: 06:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 07:05:00
+
+  TIMETABLE A
+    arrival: 06:50:00
+    day: 3
+    train_name: GUWAHATI - TRIVANDRUM CENTRAL EXP
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12516
+    departure: 06:55:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000916
+  timetable_record_id: 478743
+  allocation_start: 06:50:00
+  allocation_end: 06:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 07:05:00
+
+  TIMETABLE B
+    arrival: 06:50:00
+    day: 4
+    train_name: DIBRUGARH - BENGALURU CITY Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15902
+    departure: 06:55:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #25
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000843
+  timetable_record_id: 351913
+  allocation_start: 09:45:00
+  allocation_end: 10:10:00
+  occupancy_minutes: 25
+  buffer_minutes: 10
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:45:00
+    day: 1
+    train_name: Vellore Cantt-Arakkonam Passenger
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 56014
+    departure: 10:10:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000893
+  timetable_record_id: 526680
+  allocation_start: 09:58:00
+  allocation_end: 10:00:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 10:10:00
+
+  TIMETABLE B
+    arrival: 09:58:00
+    day: 2
+    train_name: NAGERCOIL - CHENNAI SF Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12690
+    departure: 10:00:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #26
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000895
+  timetable_record_id: 118726
+  allocation_start: 11:30:00
+  allocation_end: 11:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 11:45:00
+
+  TIMETABLE A
+    arrival: 11:30:00
+    day: 2
+    train_name: Bilaspur Tirunelveli SF Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12787
+    departure: 11:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000909
+  timetable_record_id: 475425
+  allocation_start: 11:30:00
+  allocation_end: 11:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 11:45:00
+
+  TIMETABLE B
+    arrival: 11:30:00
+    day: 3
+    train_name: LUCKNOW - YESVANTPUR SF Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12540
+    departure: 11:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #27
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000846
+  timetable_record_id: 488801
+  allocation_start: 12:08:00
+  allocation_end: 12:10:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 12:20:00
+
+  TIMETABLE A
+    arrival: 12:08:00
+    day: 1
+    train_name: CHENNAI CENT - SAINAGAR SHIRDI SF Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 22601
+    departure: 12:10:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000910
+  timetable_record_id: 122762
+  allocation_start: 12:08:00
+  allocation_end: 12:10:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 12:20:00
+
+  TIMETABLE B
+    arrival: 12:08:00
+    day: 3
+    train_name: Jaipur-Coimbatore Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12970
+    departure: 12:10:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #28
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000853
+  timetable_record_id: 489608
+  allocation_start: 16:08:00
+  allocation_end: 16:10:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 16:20:00
+
+  TIMETABLE A
+    arrival: 16:08:00
+    day: 1
+    train_name: CHENNAI CENT - HUBLI Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 17313
+    departure: 16:10:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000917
+  timetable_record_id: 537474
+  allocation_start: 16:08:00
+  allocation_end: 16:10:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 16:20:00
+
+  TIMETABLE B
+    arrival: 16:08:00
+    day: 4
+    train_name: DIBRUGARH - KANNIYAKUMARI Vivek Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15906
+    departure: 16:10:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #29
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000854
+  timetable_record_id: 134673
+  allocation_start: 16:30:00
+  allocation_end: 17:05:00
+  occupancy_minutes: 35
+  buffer_minutes: 10
+  release_time: 17:15:00
+
+  TIMETABLE A
+    arrival: 16:30:00
+    day: 1
+    train_name: Vellore Cantt. Arakkonam Passenger
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 56010
+    departure: 17:05:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000913
+  timetable_record_id: 479853
+  allocation_start: 16:33:00
+  allocation_end: 16:35:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 16:45:00
+
+  TIMETABLE B
+    arrival: 16:33:00
+    day: 3
+    train_name: DARBHANGA - MYSORE BAGMATI SF Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12577
+    departure: 16:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #30
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000897
+  timetable_record_id: 307519
+  allocation_start: 17:55:00
+  allocation_end: 18:05:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 18:15:00
+
+  TIMETABLE A
+    arrival: 17:55:00
+    day: 2
+    train_name: Mumbai CST - Kanyakumari Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 16381
+    departure: 18:05:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000857
+  timetable_record_id: 501214
+  allocation_start: 17:58:00
+  allocation_end: 18:00:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 18:10:00
+
+  TIMETABLE B
+    arrival: 17:58:00
+    day: 1
+    train_name: BANGALORE - CHENNAI CENT Brindavan Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12640
+    departure: 18:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #31
+Resource ID: KPD-P1
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA000862
+  timetable_record_id: 340584
+  allocation_start: 19:33:00
+  allocation_end: 19:35:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 19:45:00
+
+  TIMETABLE A
+    arrival: 19:33:00
+    day: 1
+    train_name: Kovai Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12676
+    departure: 19:35:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA000898
+  timetable_record_id: 293294
+  allocation_start: 19:33:00
+  allocation_end: 19:35:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 19:45:00
+
+  TIMETABLE B
+    arrival: 19:33:00
+    day: 2
+    train_name: Swarna Jayanti Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12644
+    departure: 19:35:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #32
+Resource ID: KPD-P2
+Resource type: PLATFORM
+Station: KPD (KATPADI JN)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA000947
+  timetable_record_id: 481789
+  allocation_start: 06:30:00
+  allocation_end: 07:05:00
+  occupancy_minutes: 35
+  buffer_minutes: 10
+  release_time: 07:15:00
+
+  TIMETABLE A
+    arrival: 06:30:00
+    day: 2
+    train_name: YESVANTPUR - MUZAFFARPUR Weekly Exp
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 15227
+    departure: 07:05:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA000959
+  timetable_record_id: 492359
+  allocation_start: 06:50:00
+  allocation_end: 06:55:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 07:05:00
+
+  TIMETABLE B
+    arrival: 06:50:00
+    day: 3
+    train_name: GUWAHATI - BENGALURU (Kaziranga) SF Express
+    station_name: KATPADI JN
+    station_code: KPD
+    train_number: 12510
+    departure: 06:55:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #33
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001136
+  timetable_record_id: 513382
+  allocation_start: 04:15:00
+  allocation_end: 04:40:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 05:05:00
+
+  TIMETABLE A
+    arrival: 04:15:00
+    day: 3
+    train_name: GUWAHATI - TRIVANDRUM CENTRAL EXP
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12516
+    departure: 04:40:00
+    platform_number: 16
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001116
+  timetable_record_id: 317618
+  allocation_start: 04:30:00
+  allocation_end: 04:30:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 04:55:00
+
+  TIMETABLE B
+    arrival: 04:30:00
+    day: 2
+    train_name: Yercaud Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16670
+    departure: None
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #34
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001118
+  timetable_record_id: 491378
+  allocation_start: 05:40:00
+  allocation_end: 06:20:00
+  occupancy_minutes: 40
+  buffer_minutes: 25
+  release_time: 06:45:00
+
+  TIMETABLE A
+    arrival: 05:40:00
+    day: 2
+    train_name: BENGALURU - GUWAHATI (Kaziranga) SF Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12509
+    departure: 06:20:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001087
+  timetable_record_id: 454651
+  allocation_start: 06:00:00
+  allocation_end: 06:00:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 06:25:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: CHENNAI CENT - MYSORE Shatabdi Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12007
+    departure: 06:00:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #35
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001118
+  timetable_record_id: 491378
+  allocation_start: 05:40:00
+  allocation_end: 06:20:00
+  occupancy_minutes: 40
+  buffer_minutes: 25
+  release_time: 06:45:00
+
+  TIMETABLE A
+    arrival: 05:40:00
+    day: 2
+    train_name: BENGALURU - GUWAHATI (Kaziranga) SF Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12509
+    departure: 06:20:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001137
+  timetable_record_id: 92528
+  allocation_start: 06:15:00
+  allocation_end: 06:15:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 06:40:00
+
+  TIMETABLE B
+    arrival: 06:15:00
+    day: 3
+    train_name: GrandTrunk Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12616
+    departure: None
+    platform_number: 16
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #36
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001123
+  timetable_record_id: 481829
+  allocation_start: 09:30:00
+  allocation_end: 09:55:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: YESVANTPUR - MUZAFFARPUR Weekly Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 15227
+    departure: 09:55:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001093
+  timetable_record_id: 337070
+  allocation_start: 09:35:00
+  allocation_end: 09:35:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 10:00:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Navajivan Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12656
+    departure: 09:35:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #37
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001123
+  timetable_record_id: 481829
+  allocation_start: 09:30:00
+  allocation_end: 09:55:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: YESVANTPUR - MUZAFFARPUR Weekly Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 15227
+    departure: 09:55:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001139
+  timetable_record_id: 122724
+  allocation_start: 09:45:00
+  allocation_end: 10:10:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:35:00
+
+  TIMETABLE B
+    arrival: 09:45:00
+    day: 3
+    train_name: Jaipur-Coimbatore Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12970
+    departure: 10:10:00
+    platform_number: 16
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #38
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001102
+  timetable_record_id: 490360
+  allocation_start: 15:05:00
+  allocation_end: 15:40:00
+  occupancy_minutes: 35
+  buffer_minutes: 25
+  release_time: 16:05:00
+
+  TIMETABLE A
+    arrival: 15:05:00
+    day: 1
+    train_name: BANGALORE - PATLIPUTRA Sanghamitra SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12295
+    departure: 15:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001127
+  timetable_record_id: 106046
+  allocation_start: 15:15:00
+  allocation_end: 15:15:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 15:40:00
+
+  TIMETABLE B
+    arrival: 15:15:00
+    day: 2
+    train_name: West Coast Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16628
+    departure: None
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #39
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001132
+  timetable_record_id: 342853
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE A
+    arrival: 23:20:00
+    day: 2
+    train_name: Rapti Sagar Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12511
+    departure: 23:45:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001143
+  timetable_record_id: 94926
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE B
+    arrival: 23:20:00
+    day: 3
+    train_name: Raptisagar Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12521
+    departure: 23:45:00
+    platform_number: 13
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #40
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001132
+  timetable_record_id: 342853
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE A
+    arrival: 23:20:00
+    day: 2
+    train_name: Rapti Sagar Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12511
+    departure: 23:45:00
+    platform_number: 10
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001114
+  timetable_record_id: 510550
+  allocation_start: 23:30:00
+  allocation_end: 23:30:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 23:55:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: CHENNAI - SSP NILAYAM SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12691
+    departure: 23:30:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #41
+Resource ID: MAS-P1
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001143
+  timetable_record_id: 94926
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE A
+    arrival: 23:20:00
+    day: 3
+    train_name: Raptisagar Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12521
+    departure: 23:45:00
+    platform_number: 13
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001114
+  timetable_record_id: 510550
+  allocation_start: 23:30:00
+  allocation_end: 23:30:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 23:55:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: CHENNAI - SSP NILAYAM SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12691
+    departure: 23:30:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #42
+Resource ID: MAS-P2
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA001170
+  timetable_record_id: 111083
+  allocation_start: 05:40:00
+  allocation_end: 06:20:00
+  occupancy_minutes: 40
+  buffer_minutes: 25
+  release_time: 06:45:00
+
+  TIMETABLE A
+    arrival: 05:40:00
+    day: 2
+    train_name: Ernakulam-Patna Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16309
+    departure: 06:20:00
+    platform_number: 11
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001146
+  timetable_record_id: 191444
+  allocation_start: 06:10:00
+  allocation_end: 06:10:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 06:35:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Chennai Central-H.Nizamuddin Garib Rath Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12611
+    departure: 06:10:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #43
+Resource ID: MAS-P2
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA001174
+  timetable_record_id: 412168
+  allocation_start: 09:30:00
+  allocation_end: 09:55:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: TRIVANDRUM - GUWAHATI SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12507
+    departure: 09:55:00
+    platform_number: 11
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001149
+  timetable_record_id: 208096
+  allocation_start: 09:45:00
+  allocation_end: 09:45:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 10:10:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Chennai Dehradun Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12687
+    departure: 09:45:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #44
+Resource ID: MAS-P2
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA001174
+  timetable_record_id: 412168
+  allocation_start: 09:30:00
+  allocation_end: 09:55:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: TRIVANDRUM - GUWAHATI SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12507
+    departure: 09:55:00
+    platform_number: 11
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001185
+  timetable_record_id: 227066
+  allocation_start: 09:45:00
+  allocation_end: 09:45:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 10:10:00
+
+  TIMETABLE B
+    arrival: 09:45:00
+    day: 3
+    train_name: Jaipur-Chennai SF Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12968
+    departure: None
+    platform_number: 17
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #45
+Resource ID: MAS-P2
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA001187
+  timetable_record_id: 479812
+  allocation_start: 14:20:00
+  allocation_end: 14:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 15:10:00
+
+  TIMETABLE A
+    arrival: 14:20:00
+    day: 3
+    train_name: DARBHANGA - MYSORE BAGMATI SF Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12577
+    departure: 14:45:00
+    platform_number: 14
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001155
+  timetable_record_id: 519001
+  allocation_start: 14:30:00
+  allocation_end: 14:30:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 14:55:00
+
+  TIMETABLE B
+    arrival: 14:30:00
+    day: 1
+    train_name: BANGALORE - CHENNAI CENT SF Intercity Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12610
+    departure: None
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #46
+Resource ID: MAS-P2
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 2
+
+ALLOCATION A
+  allocation_id: RA001166
+  timetable_record_id: 111564
+  allocation_start: 23:05:00
+  allocation_end: 23:25:00
+  occupancy_minutes: 20
+  buffer_minutes: 25
+  release_time: 23:50:00
+
+  TIMETABLE A
+    arrival: 23:05:00
+    day: 1
+    train_name: Raptisagar Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12522
+    departure: 23:25:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001180
+  timetable_record_id: 394244
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE B
+    arrival: 23:20:00
+    day: 2
+    train_name: Ahilyanagari Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16325
+    departure: 23:45:00
+    platform_number: 11
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #47
+Resource ID: MAS-P3
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 3
+
+ALLOCATION A
+  allocation_id: RA001207
+  timetable_record_id: 513723
+  allocation_start: 05:40:00
+  allocation_end: 06:20:00
+  occupancy_minutes: 40
+  buffer_minutes: 25
+  release_time: 06:45:00
+
+  TIMETABLE A
+    arrival: 05:40:00
+    day: 2
+    train_name: RIVANDRUM - GUWAHATI Exp
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12515
+    departure: 06:20:00
+    platform_number: 13
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001189
+  timetable_record_id: 93638
+  allocation_start: 06:10:00
+  allocation_end: 06:10:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 06:35:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Chennai Central-Delhi H.Nizamuddin Rajdhani Expres
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12433
+    departure: 06:10:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #48
+Resource ID: MAS-P3
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 3
+
+ALLOCATION A
+  allocation_id: RA001208
+  timetable_record_id: 29596
+  allocation_start: 09:30:00
+  allocation_end: 09:55:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 10:20:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: Trivandrum Shalimar Biweekly Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16323
+    departure: 09:55:00
+    platform_number: 13
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001191
+  timetable_record_id: 49839
+  allocation_start: 09:45:00
+  allocation_end: 09:45:00
+  occupancy_minutes: 0
+  buffer_minutes: 25
+  release_time: 10:10:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Chennai Chandigarh Express Slip
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 12687-Slip
+    departure: 09:45:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #49
+Resource ID: MAS-P3
+Resource type: PLATFORM
+Station: MAS (CHENNAI CENTRAL)
+Platform: 3
+
+ALLOCATION A
+  allocation_id: RA001204
+  timetable_record_id: 37594
+  allocation_start: 23:05:00
+  allocation_end: 23:25:00
+  occupancy_minutes: 20
+  buffer_minutes: 25
+  release_time: 23:50:00
+
+  TIMETABLE A
+    arrival: 23:05:00
+    day: 1
+    train_name: Trivandrum-Korba Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16328
+    departure: 23:25:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001211
+  timetable_record_id: 160780
+  allocation_start: 23:20:00
+  allocation_end: 23:45:00
+  occupancy_minutes: 25
+  buffer_minutes: 25
+  release_time: 00:10:00
+
+  TIMETABLE B
+    arrival: 23:20:00
+    day: 2
+    train_name: Korba Tiruvananthapuram Express
+    station_name: CHENNAI CENTRAL
+    station_code: MAS
+    train_number: 16327
+    departure: 23:45:00
+    platform_number: 12
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #50
+Resource ID: MDU-P1
+Resource type: PLATFORM
+Station: MDU (MADURAI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001261
+  timetable_record_id: 507433
+  allocation_start: 03:25:00
+  allocation_end: 03:30:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 03:40:00
+
+  TIMETABLE A
+    arrival: 03:25:00
+    day: 2
+    train_name: CHENNAI EGMORE - NAGERCOIL SF Exp
+    station_name: MADURAI JN
+    station_code: MDU
+    train_number: 12667
+    departure: 03:30:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001268
+  timetable_record_id: 530676
+  allocation_start: 03:25:00
+  allocation_end: 03:30:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 03:40:00
+
+  TIMETABLE B
+    arrival: 03:25:00
+    day: 3
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: MADURAI JN
+    station_code: MDU
+    train_number: 12642
+    departure: 03:30:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #51
+Resource ID: MDU-P1
+Resource type: PLATFORM
+Station: MDU (MADURAI JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001263
+  timetable_record_id: 526847
+  allocation_start: 06:40:00
+  allocation_end: 06:45:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 06:55:00
+
+  TIMETABLE A
+    arrival: 06:40:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: MADURAI JN
+    station_code: MDU
+    train_number: 12689
+    departure: 06:45:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001269
+  timetable_record_id: 529643
+  allocation_start: 06:40:00
+  allocation_end: 06:45:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 06:55:00
+
+  TIMETABLE B
+    arrival: 06:40:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: MADURAI JN
+    station_code: MDU
+    train_number: 12665
+    departure: 06:45:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #52
+Resource ID: MS-P1
+Resource type: PLATFORM
+Station: MS (CHENNAI EGMORE)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001319
+  timetable_record_id: 397636
+  allocation_start: 14:30:00
+  allocation_end: 14:40:00
+  occupancy_minutes: 10
+  buffer_minutes: 15
+  release_time: 14:55:00
+
+  TIMETABLE A
+    arrival: 14:30:00
+    day: 3
+    train_name: New Delhi-Puducherry SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 22404
+    departure: 14:40:00
+    platform_number: 11
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+ALLOCATION B
+  allocation_id: RA001280
+  timetable_record_id: 467426
+  allocation_start: 14:35:00
+  allocation_end: 14:35:00
+  occupancy_minutes: 0
+  buffer_minutes: 15
+  release_time: 14:50:00
+
+  TIMETABLE B
+    arrival: 14:35:00
+    day: 1
+    train_name: MADURAI - CHENNAI EGMORE Vaigai SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12636
+    departure: None
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #53
+Resource ID: MS-P1
+Resource type: PLATFORM
+Station: MS (CHENNAI EGMORE)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001314
+  timetable_record_id: 530583
+  allocation_start: 18:05:00
+  allocation_end: 18:30:00
+  occupancy_minutes: 25
+  buffer_minutes: 15
+  release_time: 18:45:00
+
+  TIMETABLE A
+    arrival: 18:05:00
+    day: 2
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12642
+    departure: 18:30:00
+    platform_number: 8
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001287
+  timetable_record_id: 64493
+  allocation_start: 18:10:00
+  allocation_end: 18:10:00
+  occupancy_minutes: 0
+  buffer_minutes: 15
+  release_time: 18:25:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: Chennai Egmore Puducherry Express
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 16115
+    departure: 18:10:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #54
+Resource ID: MS-P1
+Resource type: PLATFORM
+Station: MS (CHENNAI EGMORE)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001316
+  timetable_record_id: 529550
+  allocation_start: 20:00:00
+  allocation_end: 20:20:00
+  occupancy_minutes: 20
+  buffer_minutes: 15
+  release_time: 20:35:00
+
+  TIMETABLE A
+    arrival: 20:00:00
+    day: 2
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12665
+    departure: 20:20:00
+    platform_number: 8
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001291
+  timetable_record_id: 428558
+  allocation_start: 20:05:00
+  allocation_end: 20:05:00
+  occupancy_minutes: 0
+  buffer_minutes: 15
+  release_time: 20:20:00
+
+  TIMETABLE B
+    arrival: None
+    day: 1
+    train_name: CHENNAI EGMORE - SENGOTTAI Pothigai SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12661
+    departure: 20:05:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #55
+Resource ID: MS-P1
+Resource type: PLATFORM
+Station: MS (CHENNAI EGMORE)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001316
+  timetable_record_id: 529550
+  allocation_start: 20:00:00
+  allocation_end: 20:20:00
+  occupancy_minutes: 20
+  buffer_minutes: 15
+  release_time: 20:35:00
+
+  TIMETABLE A
+    arrival: 20:00:00
+    day: 2
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12665
+    departure: 20:20:00
+    platform_number: 8
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001321
+  timetable_record_id: 502325
+  allocation_start: 20:15:00
+  allocation_end: 20:15:00
+  occupancy_minutes: 0
+  buffer_minutes: 15
+  release_time: 20:30:00
+
+  TIMETABLE B
+    arrival: 20:15:00
+    day: 3
+    train_name: GUWAHATI - CHENNAI EGMORE Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 15630
+    departure: None
+    platform_number: 11
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #56
+Resource ID: MS-P1
+Resource type: PLATFORM
+Station: MS (CHENNAI EGMORE)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001316
+  timetable_record_id: 529550
+  allocation_start: 20:00:00
+  allocation_end: 20:20:00
+  occupancy_minutes: 20
+  buffer_minutes: 15
+  release_time: 20:35:00
+
+  TIMETABLE A
+    arrival: 20:00:00
+    day: 2
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 12665
+    departure: 20:20:00
+    platform_number: 8
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001322
+  timetable_record_id: 550140
+  allocation_start: 20:15:00
+  allocation_end: 20:15:00
+  occupancy_minutes: 0
+  buffer_minutes: 15
+  release_time: 20:30:00
+
+  TIMETABLE B
+    arrival: 20:15:00
+    day: 4
+    train_name: DIBRUGARH - CHENNAI EGMORE Weekly Exp
+    station_name: CHENNAI EGMORE
+    station_code: MS
+    train_number: 15930
+    departure: None
+    platform_number: 11
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #57
+Resource ID: NCJ-P1
+Resource type: PLATFORM
+Station: NCJ (NAGERCOIL JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001432
+  timetable_record_id: 539979
+  allocation_start: 05:30:00
+  allocation_end: 05:45:00
+  occupancy_minutes: 15
+  buffer_minutes: 10
+  release_time: 05:55:00
+
+  TIMETABLE A
+    arrival: 05:30:00
+    day: 2
+    train_name: GURUVAYUR - CHENNAI EGMORE Exp
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 16128
+    departure: 05:45:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001445
+  timetable_record_id: 531302
+  allocation_start: 05:35:00
+  allocation_end: 05:35:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 05:45:00
+
+  TIMETABLE B
+    arrival: 05:35:00
+    day: 3
+    train_name: MUMBAI CST - NAGERCOIL Balaji Exp
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 16351
+    departure: None
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #58
+Resource ID: NCJ-P1
+Resource type: PLATFORM
+Station: NCJ (NAGERCOIL JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001410
+  timetable_record_id: 528832
+  allocation_start: 08:10:00
+  allocation_end: 08:15:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 08:25:00
+
+  TIMETABLE A
+    arrival: 08:10:00
+    day: 1
+    train_name: KANYAKUMARI - KOL HOWRAH Weekly Exp
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 12666
+    departure: 08:15:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001446
+  timetable_record_id: 530702
+  allocation_start: 08:10:00
+  allocation_end: 08:15:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 08:25:00
+
+  TIMETABLE B
+    arrival: 08:10:00
+    day: 3
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 12642
+    departure: 08:15:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #59
+Resource ID: NCJ-P1
+Resource type: PLATFORM
+Station: NCJ (NAGERCOIL JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001438
+  timetable_record_id: 528247
+  allocation_start: 09:00:00
+  allocation_end: 09:10:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 09:20:00
+
+  TIMETABLE A
+    arrival: 09:00:00
+    day: 2
+    train_name: CHENNAI EGMORE - TRIVANDRUM Anantapuri Exp
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 16723
+    departure: 09:10:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001411
+  timetable_record_id: 102314
+  allocation_start: 09:05:00
+  allocation_end: 09:05:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 09:15:00
+
+  TIMETABLE B
+    arrival: 09:05:00
+    day: 1
+    train_name: Tiruvananthapuram Nagercoil Passenger
+    station_name: NAGERCOIL JN
+    station_code: NCJ
+    train_number: 56311
+    departure: None
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #60
+Resource ID: QLN-P1
+Resource type: PLATFORM
+Station: QLN (KOLLAM JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001684
+  timetable_record_id: 7898
+  allocation_start: 03:30:00
+  allocation_end: 03:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 03:45:00
+
+  TIMETABLE A
+    arrival: 03:30:00
+    day: 2
+    train_name: Coimbatore-Nagercoil Special
+    station_name: KOLLAM JN
+    station_code: QLN
+    train_number: 06617
+    departure: 03:35:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001697
+  timetable_record_id: 505120
+  allocation_start: 03:33:00
+  allocation_end: 03:35:00
+  occupancy_minutes: 2
+  buffer_minutes: 10
+  release_time: 03:45:00
+
+  TIMETABLE B
+    arrival: 03:33:00
+    day: 3
+    train_name: DELHI H NIZAMUDDIN - TRIVANDRUM Rajdhani Exp
+    station_name: KOLLAM JN
+    station_code: QLN
+    train_number: 12432
+    departure: 03:35:00
+    platform_number: 6
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #61
+Resource ID: TBM-P1
+Resource type: PLATFORM
+Station: TBM (TAMBARAM)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001742
+  timetable_record_id: 528142
+  allocation_start: 19:39:00
+  allocation_end: 19:40:00
+  occupancy_minutes: 1
+  buffer_minutes: 15
+  release_time: 19:55:00
+
+  TIMETABLE A
+    arrival: 19:39:00
+    day: 1
+    train_name: CHENNAI EGMORE - TRIVANDRUM Anantapuri Exp
+    station_name: TAMBARAM
+    station_code: TBM
+    train_number: 16723
+    departure: 19:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001767
+  timetable_record_id: 540084
+  allocation_start: 19:39:00
+  allocation_end: 19:40:00
+  occupancy_minutes: 1
+  buffer_minutes: 15
+  release_time: 19:55:00
+
+  TIMETABLE B
+    arrival: 19:39:00
+    day: 2
+    train_name: GURUVAYUR - CHENNAI EGMORE Exp
+    station_name: TAMBARAM
+    station_code: TBM
+    train_number: 16128
+    departure: 19:40:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #62
+Resource ID: TEN-P1
+Resource type: PLATFORM
+Station: TEN (TIRUNELVELI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001857
+  timetable_record_id: 507450
+  allocation_start: 06:25:00
+  allocation_end: 06:30:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 06:40:00
+
+  TIMETABLE A
+    arrival: 06:25:00
+    day: 2
+    train_name: CHENNAI EGMORE - NAGERCOIL SF Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12667
+    departure: 06:30:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001864
+  timetable_record_id: 530693
+  allocation_start: 06:25:00
+  allocation_end: 06:30:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 06:40:00
+
+  TIMETABLE B
+    arrival: 06:25:00
+    day: 3
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12642
+    departure: 06:30:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #63
+Resource ID: TEN-P1
+Resource type: PLATFORM
+Station: TEN (TIRUNELVELI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001846
+  timetable_record_id: 528841
+  allocation_start: 09:30:00
+  allocation_end: 09:40:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 09:50:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 1
+    train_name: KANYAKUMARI - KOL HOWRAH Weekly Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12666
+    departure: 09:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001860
+  timetable_record_id: 526864
+  allocation_start: 09:30:00
+  allocation_end: 09:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 09:45:00
+
+  TIMETABLE B
+    arrival: 09:30:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12689
+    departure: 09:35:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #64
+Resource ID: TEN-P1
+Resource type: PLATFORM
+Station: TEN (TIRUNELVELI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001846
+  timetable_record_id: 528841
+  allocation_start: 09:30:00
+  allocation_end: 09:40:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 09:50:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 1
+    train_name: KANYAKUMARI - KOL HOWRAH Weekly Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12666
+    departure: 09:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001865
+  timetable_record_id: 529660
+  allocation_start: 09:30:00
+  allocation_end: 09:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 09:45:00
+
+  TIMETABLE B
+    arrival: 09:30:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12665
+    departure: 09:35:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #65
+Resource ID: TEN-P1
+Resource type: PLATFORM
+Station: TEN (TIRUNELVELI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001860
+  timetable_record_id: 526864
+  allocation_start: 09:30:00
+  allocation_end: 09:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 09:45:00
+
+  TIMETABLE A
+    arrival: 09:30:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12689
+    departure: 09:35:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001865
+  timetable_record_id: 529660
+  allocation_start: 09:30:00
+  allocation_end: 09:35:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 09:45:00
+
+  TIMETABLE B
+    arrival: 09:30:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: TIRUNELVELI
+    station_code: TEN
+    train_number: 12665
+    departure: 09:35:00
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #66
+Resource ID: TPJ-P1
+Resource type: PLATFORM
+Station: TPJ (TIRUCHIRAPPALLI)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA001896
+  timetable_record_id: 526827
+  allocation_start: 03:25:00
+  allocation_end: 03:35:00
+  occupancy_minutes: 10
+  buffer_minutes: 15
+  release_time: 03:50:00
+
+  TIMETABLE A
+    arrival: 03:25:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: TIRUCHIRAPPALLI
+    station_code: TPJ
+    train_number: 12689
+    departure: 03:35:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA001901
+  timetable_record_id: 529623
+  allocation_start: 03:25:00
+  allocation_end: 03:35:00
+  occupancy_minutes: 10
+  buffer_minutes: 15
+  release_time: 03:50:00
+
+  TIMETABLE B
+    arrival: 03:25:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: TIRUCHIRAPPALLI
+    station_code: TPJ
+    train_number: 12665
+    departure: 03:35:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #67
+Resource ID: TVC-P1
+Resource type: PLATFORM
+Station: TVC (TRIVANDRUM CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002024
+  timetable_record_id: 379709
+  allocation_start: 03:35:00
+  allocation_end: 03:45:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 03:55:00
+
+  TIMETABLE A
+    arrival: 03:35:00
+    day: 1
+    train_name: Eranad Express
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16606
+    departure: 03:45:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002062
+  timetable_record_id: 539966
+  allocation_start: 03:35:00
+  allocation_end: 03:45:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 03:55:00
+
+  TIMETABLE B
+    arrival: 03:35:00
+    day: 2
+    train_name: GURUVAYUR - CHENNAI EGMORE Exp
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16128
+    departure: 03:45:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #68
+Resource ID: TVC-P1
+Resource type: PLATFORM
+Station: TVC (TRIVANDRUM CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002034
+  timetable_record_id: 57190
+  allocation_start: 09:00:00
+  allocation_end: 09:10:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 09:20:00
+
+  TIMETABLE A
+    arrival: 09:00:00
+    day: 1
+    train_name: Tirunelveli - Hapa (Biweekly) SF Express
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 12997
+    departure: 09:10:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002070
+  timetable_record_id: 374204
+  allocation_start: 09:05:00
+  allocation_end: 09:05:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 09:15:00
+
+  TIMETABLE B
+    arrival: 09:05:00
+    day: 2
+    train_name: Malabar Express
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16630
+    departure: None
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #69
+Resource ID: TVC-P1
+Resource type: PLATFORM
+Station: TVC (TRIVANDRUM CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002044
+  timetable_record_id: 466151
+  allocation_start: 15:05:00
+  allocation_end: 15:15:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 15:25:00
+
+  TIMETABLE A
+    arrival: 15:05:00
+    day: 1
+    train_name: NAGERCOIL - GANDHIDHAM Weekly Exp
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16336
+    departure: 15:15:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002074
+  timetable_record_id: 518724
+  allocation_start: 15:05:00
+  allocation_end: 15:15:00
+  occupancy_minutes: 10
+  buffer_minutes: 10
+  release_time: 15:25:00
+
+  TIMETABLE B
+    arrival: 15:05:00
+    day: 2
+    train_name: BANGALORE - KANNIYAKUMARI Island Exp
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16526
+    departure: 15:15:00
+    platform_number: 5
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #70
+Resource ID: TVC-P1
+Resource type: PLATFORM
+Station: TVC (TRIVANDRUM CENTRAL)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002060
+  timetable_record_id: 7764
+  allocation_start: 22:25:00
+  allocation_end: 22:40:00
+  occupancy_minutes: 15
+  buffer_minutes: 10
+  release_time: 22:50:00
+
+  TIMETABLE A
+    arrival: 22:25:00
+    day: 1
+    train_name: Nagercoil-Coimbatore Special
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 06618
+    departure: 22:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002086
+  timetable_record_id: 172908
+  allocation_start: 22:30:00
+  allocation_end: 22:30:00
+  occupancy_minutes: 0
+  buffer_minutes: 10
+  release_time: 22:40:00
+
+  TIMETABLE B
+    arrival: 22:30:00
+    day: 3
+    train_name: Shalimar Tiruvananthapuram Express
+    station_name: TRIVANDRUM CENTRAL
+    station_code: TVC
+    train_number: 16324
+    departure: None
+    platform_number: 4
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #71
+Resource ID: VAK-P1
+Resource type: PLATFORM
+Station: VAK (VARKALA)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002195
+  timetable_record_id: 339622
+  allocation_start: 07:44:00
+  allocation_end: 07:45:00
+  occupancy_minutes: 1
+  buffer_minutes: 5
+  release_time: 07:50:00
+
+  TIMETABLE A
+    arrival: 07:44:00
+    day: 1
+    train_name: Sabari Express
+    station_name: VARKALA
+    station_code: VAK
+    train_number: 17229
+    departure: 07:45:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002232
+  timetable_record_id: 374193
+  allocation_start: 07:44:00
+  allocation_end: 07:45:00
+  occupancy_minutes: 1
+  buffer_minutes: 5
+  release_time: 07:50:00
+
+  TIMETABLE B
+    arrival: 07:44:00
+    day: 2
+    train_name: Malabar Express
+    station_name: VARKALA
+    station_code: VAK
+    train_number: 16630
+    departure: 07:45:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #72
+Resource ID: VAK-P1
+Resource type: PLATFORM
+Station: VAK (VARKALA)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002236
+  timetable_record_id: 481219
+  allocation_start: 17:38:00
+  allocation_end: 17:40:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 17:45:00
+
+  TIMETABLE A
+    arrival: 17:38:00
+    day: 2
+    train_name: MUMBAI LTT - TRIVANDRUM Netravati Exp
+    station_name: VARKALA
+    station_code: VAK
+    train_number: 16345
+    departure: 17:40:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002211
+  timetable_record_id: 252623
+  allocation_start: 17:39:00
+  allocation_end: 17:40:00
+  occupancy_minutes: 1
+  buffer_minutes: 5
+  release_time: 17:45:00
+
+  TIMETABLE B
+    arrival: 17:39:00
+    day: 1
+    train_name: Trivandrum-Chennai Superfast Express
+    station_name: VARKALA
+    station_code: VAK
+    train_number: 12696
+    departure: 17:40:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #73
+Resource ID: VM-P1
+Resource type: PLATFORM
+Station: VM (VILLUPURAM JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002388
+  timetable_record_id: 507383
+  allocation_start: 21:20:00
+  allocation_end: 21:25:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 21:35:00
+
+  TIMETABLE A
+    arrival: 21:20:00
+    day: 1
+    train_name: CHENNAI EGMORE - NAGERCOIL SF Exp
+    station_name: VILLUPURAM JN
+    station_code: VM
+    train_number: 12667
+    departure: 21:25:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002399
+  timetable_record_id: 530626
+  allocation_start: 21:20:00
+  allocation_end: 21:25:00
+  occupancy_minutes: 5
+  buffer_minutes: 10
+  release_time: 21:35:00
+
+  TIMETABLE B
+    arrival: 21:20:00
+    day: 2
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: VILLUPURAM JN
+    station_code: VM
+    train_number: 12642
+    departure: 21:25:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+--------------------------------------------------------------------------------
+CONFLICT #74
+Resource ID: VPT-P1
+Resource type: PLATFORM
+Station: VPT (VIRUDUNAGAR JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002417
+  timetable_record_id: 507438
+  allocation_start: 04:10:00
+  allocation_end: 04:12:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 04:17:00
+
+  TIMETABLE A
+    arrival: 04:10:00
+    day: 2
+    train_name: CHENNAI EGMORE - NAGERCOIL SF Exp
+    station_name: VIRUDUNAGAR JN
+    station_code: VPT
+    train_number: 12667
+    departure: 04:12:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002424
+  timetable_record_id: 530681
+  allocation_start: 04:10:00
+  allocation_end: 04:12:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 04:17:00
+
+  TIMETABLE B
+    arrival: 04:10:00
+    day: 3
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: VIRUDUNAGAR JN
+    station_code: VPT
+    train_number: 12642
+    departure: 04:12:00
+    platform_number: 4
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #75
+Resource ID: VPT-P1
+Resource type: PLATFORM
+Station: VPT (VIRUDUNAGAR JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002419
+  timetable_record_id: 526852
+  allocation_start: 07:20:00
+  allocation_end: 07:22:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 07:27:00
+
+  TIMETABLE A
+    arrival: 07:20:00
+    day: 2
+    train_name: CHENNAI CENTRAL - NAGERCOIL SF Exp
+    station_name: VIRUDUNAGAR JN
+    station_code: VPT
+    train_number: 12689
+    departure: 07:22:00
+    platform_number: 3
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002425
+  timetable_record_id: 529648
+  allocation_start: 07:20:00
+  allocation_end: 07:22:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 07:27:00
+
+  TIMETABLE B
+    arrival: 07:20:00
+    day: 3
+    train_name: HOWRAH - KANNIYAKUMARI SF Exp
+    station_name: VIRUDUNAGAR JN
+    station_code: VPT
+    train_number: 12665
+    departure: 07:22:00
+    platform_number: 4
+    platform_type: SUBURBAN
+    platform_allocated_by: AUTO_FALLBACK
+
+--------------------------------------------------------------------------------
+CONFLICT #76
+Resource ID: VRI-P1
+Resource type: PLATFORM
+Station: VRI (VRIDHACHALAM JN)
+Platform: 1
+
+ALLOCATION A
+  allocation_id: RA002431
+  timetable_record_id: 507390
+  allocation_start: 22:10:00
+  allocation_end: 22:12:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 22:17:00
+
+  TIMETABLE A
+    arrival: 22:10:00
+    day: 1
+    train_name: CHENNAI EGMORE - NAGERCOIL SF Exp
+    station_name: VRIDHACHALAM JN
+    station_code: VRI
+    train_number: 12667
+    departure: 22:12:00
+    platform_number: 1
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+ALLOCATION B
+  allocation_id: RA002443
+  timetable_record_id: 530633
+  allocation_start: 22:10:00
+  allocation_end: 22:12:00
+  occupancy_minutes: 2
+  buffer_minutes: 5
+  release_time: 22:17:00
+
+  TIMETABLE B
+    arrival: 22:10:00
+    day: 2
+    train_name: D H NIZAMUDDIN - KANYAKUMARI Thirukkural Exp
+    station_name: VRIDHACHALAM JN
+    station_code: VRI
+    train_number: 12642
+    departure: 22:12:00
+    platform_number: 2
+    platform_type: MAINLINE
+    platform_allocated_by: AUTO
+
+================================================================================
+MULTIPLE ALLOCATIONS PER TIMETABLE RECORD
+================================================================================
+Timetable records with >1 allocation: 0
+
+================================================================================
+FINAL SUMMARY
+================================================================================
+Timetable records                  : 2469
+Resource allocations               : 2445
+Missing timetable links             : 0
+Zero-duration allocations           : 1276
+Invalid time intervals              : 1
+Conflicting allocation pairs        : 76
+Resources containing conflicts      : 23
+Timetable records with >1 allocation: 0
+
+END OF REPORT

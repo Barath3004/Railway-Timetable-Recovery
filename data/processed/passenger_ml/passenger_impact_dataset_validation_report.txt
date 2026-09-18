@@ -1,0 +1,388 @@
+
+================================================================================
+PASSENGER IMPACT SYNTHETIC DATASET VALIDATION REPORT
+================================================================================
+
+1. DATASET GENERATION SUMMARY
+-----------------------------
+This dataset is synthetic and is intended for Phase 1 passenger-impact ML
+prototyping.
+
+It is NOT historical railway passenger-disruption data.
+
+- Total Generated Scenarios : 50,000
+- Random Seed               : 42
+
+2. FORMULA USED
+---------------
+
+Formula Version:
+v1.2-interpretable-synthetic
+
+AffectedPassengers =
+    TrainPassengerExposure
+    * DisruptionExposureFactor
+
+PassengerDelayMinutes =
+    AffectedPassengers
+    * DelayMinutes
+    * SeverityFactor
+    * (1 + ControlledNoise)
+
+Where:
+
+TrainPassengerExposure =
+    StationDailyPassengers
+    * TimeOfDayWeight
+    * TrainServiceShare
+    * TrainLoadFactor
+
+TrainServiceShare =
+    CapacityWeightedSelectedTrainShare
+    among time-relevant timetable services.
+
+DisruptionExposureFactor =
+    BaseTypeFactor
+    * TrainCountFactor
+    * DurationFactor
+
+SeverityFactor =
+    PeakMultiplier
+    * PriorityMultiplier
+
+IMPORTANT FORMULA DESIGN:
+BaseTypeFactor is applied only through
+DisruptionExposureFactor.
+
+BaseTypeFactor is NOT applied again through
+SeverityFactor.
+
+This prevents double-counting the disruption type.
+
+ControlledNoise =
+    Uniform(-0.10, +0.10)
+
+3. TIME-OF-DAY WEIGHTING
+------------------------
+
+Raw weight sum:
+- 0.960000
+
+Normalized weight sum:
+- 1.000000000000
+
+Actual hourly probability sum:
+- 1.000000000000
+
+Normalized period weights:
+
+- 00:00-05:59 Overnight            : 0.04166667 (6 hrs)
+- 06:00-08:59 Morning build-up     : 0.14583333 (3 hrs)
+- 09:00-11:59 Morning peak         : 0.22916667 (3 hrs)
+- 12:00-15:59 Midday               : 0.14583333 (4 hrs)
+- 16:00-18:59 Evening peak         : 0.25000000 (3 hrs)
+- 19:00-21:59 Evening              : 0.14583333 (3 hrs)
+- 22:00-23:59 Night                : 0.04166667 (2 hrs)
+
+Status:
+- PASS
+
+4. TRAIN EXPOSURE METHODOLOGY
+-----------------------------
+
+- Station baseline demand is derived from:
+  project_station_passenger_data.csv
+
+- Station count:
+  32
+
+- Train selection is grounded in the validated SQLite timetable.
+
+- Selected trains are operationally relevant to the generated
+  station/time/day scenario.
+
+- Train service share uses capacity-weighted timetable services
+  around the generated scenario time.
+
+- Train load factors are bounded by train type.
+
+5. TRAIN LOAD FACTOR RANGES
+----------------------------
+
+- EMU            : 1.10-1.60
+- MEMU           : 1.00-1.45
+- Passenger      : 0.85-1.25
+- Express        : 0.75-1.15
+- Mail           : 0.75-1.15
+- Superfast      : 0.70-1.10
+- Shatabdi       : 0.70-1.05
+- Jan Shatabdi   : 0.75-1.10
+- Duronto        : 0.70-1.05
+- Rajdhani       : 0.65-1.00
+- Garib Rath     : 0.75-1.10
+
+6. DISRUPTION TYPES
+-------------------
+
+- PLATFORM_CLOSURE              : 0.90
+- TRACK_FAILURE                 : 1.40
+- SIGNAL_FAILURE                : 1.15
+- PLANNED_MAINTENANCE           : 0.80
+- OTHER_RESOURCE_DISRUPTION     : 1.00
+
+7. DISRUPTION DURATION
+----------------------
+
+- Minimum : 10 minutes
+- Maximum : 180 minutes
+
+8. AFFECTED TRAIN COUNT
+-----------------------
+
+- Minimum : 1
+- Maximum : 18
+
+9. DELAY DISTRIBUTION
+---------------------
+
+- 1-5 mins : 20.0%
+- 5-10 mins : 25.0%
+- 10-20 mins : 25.0%
+- 20-30 mins : 15.0%
+- 30-60 mins : 10.0%
+- 60-120 mins : 5.0%
+
+10. NOISE METHODOLOGY
+---------------------
+
+- Minimum observed noise : -0.10000
+- Maximum observed noise : 0.09999
+- Allowed range          : -0.10 to +0.10
+
+Status:
+- PASS
+
+11. DATASET COUNTS
+------------------
+
+- Total      : 50,000
+- Training   : 35,000
+- Validation : 7,500
+- Test       : 7,500
+
+12. MISSING VALUES
+------------------
+
+- Total Missing Values : 0
+- Status               : PASS
+
+13. DUPLICATE CHECK
+-------------------
+
+- Duplicate Scenario IDs : 0
+- Status                 : PASS
+
+14. NUMERIC VALIDITY
+--------------------
+
+- Negative Passengers       : 0
+- Negative Delays           : 0
+- Negative Durations        : 0
+- Negative Impact Values    : 0
+- Zero/Negative Demand      : 0
+- Invalid Service Shares    : 0
+- Invalid Load Factors      : 0
+
+Status:
+- PASS
+
+15. RANGE VALIDATION
+--------------------
+
+- Delay range:
+  1.00
+  to
+  120.00
+
+- Disruption duration range:
+  11.10
+  to
+  180.00
+
+- Minimum affected passengers:
+  1
+
+- Minimum passenger impact:
+  0.79
+
+Status:
+- PASS
+
+16. CATEGORY COVERAGE
+---------------------
+
+- Station Coverage:
+  32/32
+
+- Disruption Coverage:
+  5/5
+
+- Train Type Coverage:
+  11/11
+
+- Time Period Coverage:
+  7/7
+
+- Day Coverage:
+  7/7
+
+Status:
+- Stations    : PASS
+- Disruptions : PASS
+- Train Types : PASS
+- Time Period : PASS
+- Days        : PASS
+
+17. TARGET STATISTICS
+---------------------
+
+Target:
+passenger_delay_minutes
+
+- Minimum : 0.79
+- Maximum : 1,858,992.85
+- Mean    : 12,978.00
+- Median  : 3,736.51
+- Std Dev : 43,114.71
+- P25     : 1,175.72
+- P50     : 3,736.51
+- P75     : 10,823.30
+- P90     : 26,910.08
+- P95     : 47,274.98
+- P99     : 149,422.14
+
+18. SYNTHETIC RELATIONSHIPS
+---------------------------
+
+- Station Demand vs Affected Passengers :
+  0.3784
+
+- Delay Minutes vs Passenger Impact :
+  0.3397
+
+- Affected Passengers vs Impact :
+  0.6281
+
+- Affected Train Count vs Impact :
+  0.1500
+
+- Peak Period Mean Impact :
+  18,646.35
+
+- Non-Peak Period Mean Impact :
+  7,813.18
+
+Status:
+- PASS
+
+19. TIMETABLE GROUNDING
+-----------------------
+
+- Generated train numbers found in DB :
+  436
+
+- Unknown generated train numbers :
+  0
+
+Status:
+- PASS
+
+20. TARGET LEAKAGE CHECK
+------------------------
+
+ML feature columns:
+
+- station_code
+- station_category
+- station_daily_passengers
+- day_of_week
+- day_type
+- hour
+- minute
+- time_period
+- is_peak_period
+- train_type
+- train_priority
+- disruption_type
+- disruption_duration_minutes
+- delay_minutes
+- affected_train_count
+
+Excluded from ML features because they are derived target-side
+quantities or intermediate calculations:
+
+- passenger_delay_minutes
+- affected_passengers
+- train_passenger_exposure
+- train_service_share
+- train_load_factor
+- disruption_exposure_factor
+- controlled_noise
+
+Target leakage columns detected:
+[]
+
+Status:
+- PASS
+
+21. BASELINE ML SANITY CHECK
+----------------------------
+
+Model:
+RandomForestRegressor
+
+Parameters:
+- n_estimators = 100
+- random_state = 42
+
+Validation:
+- MAE  : 4,638.21
+- RMSE : 20,036.23
+- R²   : 0.7891
+
+Test:
+- MAE  : 4,190.55
+- RMSE : 15,136.00
+- R²   : 0.8872
+
+Sanity threshold:
+- Test R² >= 0.85
+
+Status:
+- PASS
+
+22. IMPORTANT LIMITATIONS
+-------------------------
+
+- This dataset is synthetic.
+- It is not historical disruption data.
+- Station demand is based on station-level baseline passenger data.
+- Passenger impact labels are generated using an interpretable synthetic
+  scenario model.
+- Train service selection is grounded in the validated project timetable.
+- Train service share is an estimate based on timetable service density
+  and relative train capacity.
+- Train load factors are controlled synthetic ranges.
+- BaseTypeFactor is applied once through DisruptionExposureFactor.
+- SeverityFactor contains peak-period and train-priority effects only.
+- Synthetic data should be treated as Phase 1 ML prototyping data.
+- Real-world validation will be required when historical disruption and
+  passenger-impact observations become available.
+
+23. OVERALL VALIDATION STATUS
+----------------------------
+
+Overall validation:
+PASS
+
+================================================================================

@@ -1,0 +1,18 @@
+{
+    "model": "RandomForestRegressor",
+    "random_seed": 42,
+    "target": "passenger_delay_minutes",
+    "training_rows": 35000,
+    "validation_rows": 7500,
+    "test_rows": 7500,
+    "validation": {
+        "MAE": 5926.792141747934,
+        "RMSE": 24951.53883915947,
+        "R2": 0.6728553770593904
+    },
+    "test": {
+        "MAE": 5616.117892244732,
+        "RMSE": 23423.2860990735,
+        "R2": 0.7297442884853196
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "model_version": "v1.0-passenger-impact-hgb",
+    "model_name": "HistGradientBoosting",
+    "model_type": "HistGradientBoostingRegressor",
+    "target": "passenger_delay_minutes",
+    "random_seed": 42,
+    "feature_columns": [
+        "station_code",
+        "station_category",
+        "station_daily_passengers",
+        "day_of_week",
+        "day_type",
+        "hour",
+        "minute",
+        "time_period",
+        "is_peak_period",
+        "train_type",
+        "train_priority",
+        "disruption_type",
+        "disruption_duration_minutes",
+        "delay_minutes",
+        "affected_train_count"
+    ],
+    "categorical_features": [
+        "station_code",
+        "station_category",
+        "day_of_week",
+        "day_type",
+        "time_period",
+        "train_type",
+        "disruption_type"
+    ],
+    "numeric_features": [
+        "station_daily_passengers",
+        "hour",
+        "minute",
+        "is_peak_period",
+        "train_priority",
+        "disruption_duration_minutes",
+        "delay_minutes",
+        "affected_train_count"
+    ],
+    "training_rows": 35000,
+    "validation_rows": 7500,
+    "test_rows": 7500,
+    "test_metrics": {
+        "MAE": 4843.805306135003,
+        "RMSE": 16584.828805264628,
+        "R2": 0.8645118787158672
+    },
+    "validation_metrics": {
+        "MAE": 5397.954825358872,
+        "RMSE": 21142.689448361536,
+        "R2": 0.7651094321311355
+    },
+    "behavioral_validation": {
+        "passed": 6,
+        "total": 6,
+        "behavioral_score": 1.0
+    },
+    "intended_use": "Passenger impact estimation for ALNS candidate evaluation.",
+    "optimization_role": "The ML model estimates passenger impact. ALNS remains the timetable optimization algorithm.",
+    "dataset_note": "The passenger impact training target is based on the controlled synthetic passenger-impact dataset generated from station passenger-demand baselines and validated timetable characteristics. It is not historical passenger-delay data.",
+    "selection_note": "HistGradientBoosting is finalized as the Phase 1 Passenger Impact model based on quantitative test metrics and behavioral validation."
+}

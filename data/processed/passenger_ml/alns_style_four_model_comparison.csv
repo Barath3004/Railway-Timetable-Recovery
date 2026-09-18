@@ -1,0 +1,5 @@
+model,best_candidate,predicted_passenger_delay_minutes,delay_minutes,affected_train_count
+Random Forest,A,11132.246438208413,15,5
+Extra Trees,A,12720.62946292325,15,5
+Gradient Boosting,A,17747.150044108035,15,5
+HistGradientBoosting,A,12733.005885362516,15,5

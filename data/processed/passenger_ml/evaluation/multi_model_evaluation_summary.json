@@ -1,0 +1,125 @@
+{
+    "evaluation_version": "v1.0-four-model-comparison",
+    "random_seed": 42,
+    "target": "passenger_delay_minutes",
+    "models": [
+        "Random Forest",
+        "Extra Trees",
+        "Gradient Boosting",
+        "HistGradientBoosting"
+    ],
+    "final_model": "HistGradientBoosting",
+    "training_rows": 35000,
+    "validation_rows": 7500,
+    "test_rows": 7500,
+    "feature_columns": [
+        "station_code",
+        "station_category",
+        "station_daily_passengers",
+        "day_of_week",
+        "day_type",
+        "hour",
+        "minute",
+        "time_period",
+        "is_peak_period",
+        "train_type",
+        "train_priority",
+        "disruption_type",
+        "disruption_duration_minutes",
+        "delay_minutes",
+        "affected_train_count"
+    ],
+    "evaluation_metrics": {
+        "model_performance": [
+            {
+                "model": "HistGradientBoosting",
+                "validation_MAE": 5397.954825358872,
+                "validation_RMSE": 21142.689448361536,
+                "validation_R2": 0.7651094321311355,
+                "test_MAE": 4843.805306135003,
+                "test_RMSE": 16584.828805264628,
+                "test_R2": 0.8645118787158672
+            },
+            {
+                "model": "Extra Trees",
+                "validation_MAE": 6110.608049565403,
+                "validation_RMSE": 23412.94504080708,
+                "validation_R2": 0.7119570781512987,
+                "test_MAE": 5838.902597256392,
+                "test_RMSE": 23080.8235195671,
+                "test_R2": 0.7375891212924705
+            },
+            {
+                "model": "Random Forest",
+                "validation_MAE": 5926.792141747934,
+                "validation_RMSE": 24951.538839159468,
+                "validation_R2": 0.6728553770593904,
+                "test_MAE": 5616.117892244732,
+                "test_RMSE": 23423.2860990735,
+                "test_R2": 0.7297442884853196
+            },
+            {
+                "model": "Gradient Boosting",
+                "validation_MAE": 8080.911536376593,
+                "validation_RMSE": 30628.122677576503,
+                "validation_R2": 0.5070692941987536,
+                "test_MAE": 7774.507502488004,
+                "test_RMSE": 28240.196049517333,
+                "test_R2": 0.6071609522622128
+            }
+        ],
+        "behavioral_validation": [
+            {
+                "model": "Random Forest",
+                "passed": 6,
+                "total": 6,
+                "behavioral_score": 1.0,
+                "delay_test": "PASS",
+                "duration_test": "PASS",
+                "affected_trains_test": "PASS",
+                "peak_test": "PASS",
+                "demand_test": "PASS",
+                "candidate_test": "PASS"
+            },
+            {
+                "model": "Extra Trees",
+                "passed": 6,
+                "total": 6,
+                "behavioral_score": 1.0,
+                "delay_test": "PASS",
+                "duration_test": "PASS",
+                "affected_trains_test": "PASS",
+                "peak_test": "PASS",
+                "demand_test": "PASS",
+                "candidate_test": "PASS"
+            },
+            {
+                "model": "Gradient Boosting",
+                "passed": 5,
+                "total": 6,
+                "behavioral_score": 0.8333333333333334,
+                "delay_test": "PASS",
+                "duration_test": "FAIL",
+                "affected_trains_test": "PASS",
+                "peak_test": "PASS",
+                "demand_test": "PASS",
+                "candidate_test": "PASS"
+            },
+            {
+                "model": "HistGradientBoosting",
+                "passed": 6,
+                "total": 6,
+                "behavioral_score": 1.0,
+                "delay_test": "PASS",
+                "duration_test": "PASS",
+                "affected_trains_test": "PASS",
+                "peak_test": "PASS",
+                "demand_test": "PASS",
+                "candidate_test": "PASS"
+            }
+        ]
+    },
+    "selection_method": "HistGradientBoosting was finalized after comparison of regression metrics and behavioral scenario validation.",
+    "important_note": "R2 is a regression metric and should not be interpreted as percentage accuracy. The reported metrics apply to the controlled synthetic passenger-impact test dataset.",
+    "intended_use": "Passenger impact estimation for ALNS candidate evaluation."
+}

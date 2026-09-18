@@ -1,0 +1,13 @@
+model,candidate,rank,predicted_passenger_delay_minutes
+Random Forest,A,1,11132.246438208413
+Random Forest,B,2,16638.5981441908
+Random Forest,C,3,22797.646895454352
+Extra Trees,A,1,12720.62946292325
+Extra Trees,B,2,17627.14069971664
+Extra Trees,C,3,23516.4832133325
+Gradient Boosting,A,1,17747.150044108035
+Gradient Boosting,B,2,23508.045580353064
+Gradient Boosting,C,3,38975.78738182951
+HistGradientBoosting,A,1,12733.005885362516
+HistGradientBoosting,B,2,19067.259477300144
+HistGradientBoosting,C,3,25779.946494763382

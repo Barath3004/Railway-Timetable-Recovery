@@ -1,0 +1,1058 @@
+[
+    {
+        "station_code": "MAS",
+        "station_name": "Chennai Central Puratchi Thalaivar Dr. M.G. Ramachandran Central Railway Station",
+        "platforms_total": 17,
+        "station_buffer_minutes": 25,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 9,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 10,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 11,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 12,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 13,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 14,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 15,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 16,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 17,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "MS",
+        "station_name": "Chennai Egmore",
+        "platforms_total": 11,
+        "station_buffer_minutes": 15,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 9,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 10,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 11,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "BBQ",
+        "station_name": "Basin Bridge Junction",
+        "platforms_total": 7,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "PER",
+        "station_name": "Perambur",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "VLK",
+        "station_name": "Villivakkam",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "ABU",
+        "station_name": "Ambattur",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "AVD",
+        "station_name": "Avadi",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "TRL",
+        "station_name": "Tiruvallur",
+        "platforms_total": 6,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "AJJ",
+        "station_name": "Arakkonam Junction",
+        "platforms_total": 8,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "KPD",
+        "station_name": "Vellore Katpadi Junction",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "JTJ",
+        "station_name": "Jolarpettai Junction",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "TBM",
+        "station_name": "Tambaram",
+        "platforms_total": 10,
+        "station_buffer_minutes": 15,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 9,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 10,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "CGL",
+        "station_name": "Chengalpattu Junction",
+        "platforms_total": 8,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "TMV",
+        "station_name": "Tindivanam",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "VM",
+        "station_name": "Villuppuram Junction",
+        "platforms_total": 7,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "VRI",
+        "station_name": "Vriddhachalam Junction",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "CUPJ",
+        "station_name": "Cuddalore Port Junction",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "TPJ",
+        "station_name": "Tiruchchirappalli Junction",
+        "platforms_total": 9,
+        "station_buffer_minutes": 15,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 8,
+                "platform_type": "SUBURBAN"
+            },
+            {
+                "platform_number": 9,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "KRR",
+        "station_name": "Karur Junction Karur Sandhippu",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "DG",
+        "station_name": "Dindigul Junction",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "MDU",
+        "station_name": "Madurai Junction Madurai Sandhippu",
+        "platforms_total": 7,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 7,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "VPT",
+        "station_name": "Virudhunagar Junction Virudhunagar Sandhippu",
+        "platforms_total": 4,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "SVKS",
+        "station_name": "Sivakasi",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "CVP",
+        "station_name": "Kovilpatti Koovilpati",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "TEN",
+        "station_name": "Tirunelveli Junction Tirunelveli Sandhippu",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "NCJ",
+        "station_name": "Nagercoil Junction Nagerkovil Sandhippu",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "RMD",
+        "station_name": "Ramanathapuram Ramanad",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "CAPE",
+        "station_name": "Kanniyakumari Cape Comorin",
+        "platforms_total": 6,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "ERL",
+        "station_name": "Eraniel",
+        "platforms_total": 2,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "PASA",
+        "station_name": "Parassala",
+        "platforms_total": 2,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "NYY",
+        "station_name": "Neyyattinkara",
+        "platforms_total": 2,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "TVC",
+        "station_name": "Thiruvananthapuram Central",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "TVP",
+        "station_name": "Thiruvananthapuram Pettah Trivandrum Pettah",
+        "platforms_total": 2,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "VAK",
+        "station_name": "Varkala",
+        "platforms_total": 3,
+        "station_buffer_minutes": 5,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            }
+        ]
+    },
+    {
+        "station_code": "QLN",
+        "station_name": "Kollam Junction Quilon Junction",
+        "platforms_total": 6,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 6,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    },
+    {
+        "station_code": "KYJ",
+        "station_name": "Kayamkulam Junction",
+        "platforms_total": 5,
+        "station_buffer_minutes": 10,
+        "platforms": [
+            {
+                "platform_number": 1,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 2,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 3,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 4,
+                "platform_type": "MAINLINE"
+            },
+            {
+                "platform_number": 5,
+                "platform_type": "SUBURBAN"
+            }
+        ]
+    }
+]

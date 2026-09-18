@@ -1,0 +1,41 @@
+station_code,station_name,railway_zone,railway_division,platforms_total,mainline_platforms,suburban_platforms,electrified
+MAS,Chennai Central Puratchi Thalaivar Dr. M.G. Ramachandran Central Railway Station,Southern Railway,Chennai,17,12,5,1931
+MS,Chennai Egmore,Southern Railway,Chennai,11,11,0,1931
+BBQ,Basin Bridge Junction,Southern Railway,,7,7,0,1979
+PER,Perambur,Southern Railway,,4,4,0,1979
+VLK,Villivakkam,Southern Railway,,4,4,0,1979
+ABU,Ambattur,Southern Railway,,3,3,0,1979
+AVD,Avadi,Southern Railway,,4,4,0,1979
+TRL,Tiruvallur,Southern Railway,,6,6,0,1979
+AJJ,Arakkonam Junction,Southern Railway,Chennai,8,8,0,1982
+KPD,Vellore Katpadi Junction,,,5,5,0,0
+JTJ,Jolarpettai Junction,Southern Railway,,5,5,0,0
+TBM,Tambaram,Southern Railway,Chennai,10,10,0,1931
+CGL,Chengalpattu Junction,Southern Railway,Chennai,8,8,0,0
+TMV,Tindivanam,Southern Railway,Chennai,3,3,0,0
+VM,Villuppuram Junction,Southern Railway,,7,7,0,0
+VRI,Vriddhachalam Junction,,Tiruchirappalli,4,4,0,0
+CUPJ,Cuddalore Port Junction,Southern Railway,Tiruchirapalli,4,4,0,0
+TPJ,Tiruchchirappalli Junction,Southern Railway,Tiruchirappalli,9,9,0,0
+KRR,Karur Junction Karur Sandhippu,Southern Railway,Salem,5,5,0,0
+DG,Dindigul Junction,Southern Railway,Madurai,5,5,0,0
+MDU,Madurai Junction Madurai Sandhippu,Southern Railway,Madurai,7,7,0,0
+VPT,Virudhunagar Junction Virudhunagar Sandhippu,Southern Railway,Madurai,4,4,0,0
+SVKS,Sivakasi,Southern Railway,MDU Tooltip Madurai railway division,3,3,0,0
+CVP,Kovilpatti Koovilpati,Southern Railway,Madurai,3,3,0,0
+TEN,Tirunelveli Junction Tirunelveli Sandhippu,Southern Railway,Madurai,5,5,0,0
+NCJ,Nagercoil Junction Nagerkovil Sandhippu,Southern Railway,Thiruvananthapuram,4,4,0,0
+RMD,Ramanathapuram Ramanad,Southern Railway,Madurai,3,3,0,0
+CAPE,Kanniyakumari Cape Comorin,Southern Railway,,5,5,0,0
+ERL,Eraniel,Southern Railway,Thiruvananthapuram,2,2,0,0
+PASA,Parassala,Southern Railway,Thiruvananthapuram,2,2,0,0
+NYY,Neyyattinkara,Southern Railway,Thiruvananthapuram,2,2,0,0
+TVC,Thiruvananthapuram Central,Southern Railway,Thiruvananthapuram,5,5,0,2005
+TVP,Thiruvananthapuram Pettah Trivandrum Pettah,Southern Railway,Thiruvananthapuram Tooltip Thiruvananthapuram railway division,2,2,0,0
+VAK,Varkala,Southern Railway,Thiruvananthapuram,3,3,0,0
+QLN,Kollam Junction Quilon Junction,Southern Railway,Thiruvananthapuram,6,6,0,2001
+KYJ,Kayamkulam Junction,Southern Railway,,5,5,0,0
+ERS,Ernakulam Junction Ernakulam South,Southern Railway,,6,6,0,2000
+GDR,Gudur Junction,SCR Tooltip South Coast Railway,Vijayawada Tooltip Vijayawada railway division,5,5,0,1980
+BZA,Vijayawada Junction,South Coast Railway,Vijayawada,10,10,0,0
+TEL,Tenali Junction,SCoR Tooltip South Coast Railway,Vijayawada Tooltip Vijayawada railway division,5,5,0,1980

@@ -1,0 +1,138 @@
+======================================================================
+ROUTE VALIDATION REPORT
+======================================================================
+
+Total Trains             : 552
+Total Records            : 35552
+
+Duplicate Station Routes : 30
+Duplicate Stop Numbers   : 0
+Circular Routes          : 0
+
+Longest Route            : 12511 (239 stops)
+Shortest Route           : 12164 (2 stops)
+Average Stops            : 64.41
+
+======================================================================
+DETAILS
+======================================================================
+
+Train : 12577
+Duplicate Stations:
+   BBQ
+
+Train : 12516
+Duplicate Stations:
+   BBQ
+
+Train : 12510
+Duplicate Stations:
+   BBQ
+
+Train : 12970
+Duplicate Stations:
+   BBQ
+
+Train : 12511
+Duplicate Stations:
+   BBQ
+
+Train : 12296
+Duplicate Stations:
+   BBQ
+
+Train : 16325
+Duplicate Stations:
+   BBQ
+
+Train : 12969
+Duplicate Stations:
+   BBQ
+
+Train : 13352-Slip
+Duplicate Stations:
+   BBQ
+
+Train : 12578
+Duplicate Stations:
+   BBQ
+
+Train : 12522
+Duplicate Stations:
+   BBQ
+
+Train : 12512
+Duplicate Stations:
+   BBQ
+
+Train : 16324
+Duplicate Stations:
+   BBQ
+
+Train : 16327
+Duplicate Stations:
+   BBQ
+
+Train : 12507
+Duplicate Stations:
+   BBQ
+
+Train : 18189
+Duplicate Stations:
+   BBQ
+
+Train : 12295
+Duplicate Stations:
+   BBQ
+
+Train : 16309
+Duplicate Stations:
+   BBQ
+
+Train : 12508
+Duplicate Stations:
+   BBQ
+
+Train : 12509
+Duplicate Stations:
+   BBQ
+
+Train : 12515
+Duplicate Stations:
+   BBQ
+
+Train : 15228
+Duplicate Stations:
+   BBQ
+
+Train : 13352
+Duplicate Stations:
+   BBQ
+
+Train : 16323
+Duplicate Stations:
+   BBQ
+
+Train : 16310
+Duplicate Stations:
+   BBQ
+
+Train : 12521
+Duplicate Stations:
+   BBQ
+
+Train : 15227
+Duplicate Stations:
+   BBQ
+
+Train : 13351
+Duplicate Stations:
+   BBQ
+
+Train : 16326
+Duplicate Stations:
+   BBQ
+
+Train : 16328
+Duplicate Stations:
+   BBQ

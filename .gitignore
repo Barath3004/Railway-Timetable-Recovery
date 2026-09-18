@@ -1,0 +1,56 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Python test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Large comparison models
+data/processed/passenger_ml/comparison_models/random_forest_model.joblib
+data/processed/passenger_ml/comparison_models/extra_trees_model.joblib
+
+# Large raw/intermediate data
+data/raw/schedules.json
+data/processed/intermediate/
+
+# Old backup files
+data/processed/project_timetable_platform_old.json

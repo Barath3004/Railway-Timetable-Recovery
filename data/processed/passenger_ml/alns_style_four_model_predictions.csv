@@ -1,0 +1,13 @@
+model,candidate,delay_minutes,affected_train_count,predicted_passenger_delay_minutes
+Random Forest,A,15,5,11132.246438208413
+Random Forest,B,25,3,16638.5981441908
+Random Forest,C,40,2,22797.646895454352
+Extra Trees,A,15,5,12720.62946292325
+Extra Trees,B,25,3,17627.14069971664
+Extra Trees,C,40,2,23516.4832133325
+Gradient Boosting,A,15,5,17747.150044108035
+Gradient Boosting,B,25,3,23508.045580353064
+Gradient Boosting,C,40,2,38975.78738182951
+HistGradientBoosting,A,15,5,12733.005885362516
+HistGradientBoosting,B,25,3,19067.259477300144
+HistGradientBoosting,C,40,2,25779.946494763382
