@@ -1,3 +1,4 @@
+data/database/recovery_history.db
 # Python virtual environment
 .venv/
 venv/

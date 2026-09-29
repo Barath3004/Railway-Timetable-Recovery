@@ -9,9 +9,12 @@ from datetime import datetime, timedelta
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(
-        os.path.abspath(__file__)
+        os.path.dirname(
+            os.path.abspath(__file__)
+        )
     )
 )
+
 
 # ------------------------------------------------------------
 # Possible timetable locations
@@ -34,20 +37,24 @@ TIMETABLE_CANDIDATES = [
     )
 ]
 
+
 TRAIN_MASTER_FILE = os.path.join(
     BASE_DIR,
     "data",
     "processed",
+    "trains",
     "train_master.json"
 )
+
 
 STATION_PROFILE_FILE = os.path.join(
     BASE_DIR,
     "data",
     "processed",
-    "station",
+    "platforms",
     "station_platform_profile.json"
 )
+
 
 OUTPUT_DIR = os.path.join(
     BASE_DIR,
@@ -55,6 +62,7 @@ OUTPUT_DIR = os.path.join(
     "processed",
     "resource"
 )
+
 
 OUTPUT_FILE = os.path.join(
     OUTPUT_DIR,
@@ -66,9 +74,7 @@ OUTPUT_FILE = os.path.join(
 # CONSTANTS
 # ============================================================
 
-MINUTES_PER_DAY = 24 * 60
-
-SMALL_TRAIN_BUFFER_MINUTES = 5
+ZERO_DWELL_BUFFER_MINUTES = 5
 
 
 # ============================================================
@@ -167,19 +173,6 @@ def get_day(record):
         return 1
 
 
-def is_small_train(train_type):
-
-    if train_type is None:
-        return False
-
-    return str(
-        train_type
-    ).strip().upper() in {
-        "EMU",
-        "MEMU"
-    }
-
-
 # ============================================================
 # START
 # ============================================================
@@ -215,14 +208,8 @@ if TIMETABLE_FILE is None:
     )
 
 
-print(
-    "Timetable Source:"
-)
-
-print(
-    TIMETABLE_FILE
-)
-
+print("Timetable Source:")
+print(TIMETABLE_FILE)
 print()
 
 
@@ -257,28 +244,6 @@ if not isinstance(
     raise ValueError(
         "Train master must contain a JSON list."
     )
-
-
-# ============================================================
-# TRAIN LOOKUP
-# ============================================================
-
-train_lookup = {}
-
-for train in train_master:
-
-    train_number = str(
-        train.get(
-            "train_number",
-            ""
-        )
-    ).strip()
-
-    if train_number:
-
-        train_lookup[
-            train_number
-        ] = train
 
 
 print(
@@ -348,7 +313,7 @@ for profile in station_profiles:
 
 
     # --------------------------------------------------------
-    # BUFFER
+    # STATION BUFFER
     # --------------------------------------------------------
 
     buffer_value = profile.get(
@@ -477,11 +442,15 @@ fallback_count = 0
 
 overnight_count = 0
 
-small_train_count = 0
-small_train_buffer_count = 0
-normal_train_buffer_count = 0
-
 zero_duration = 0
+
+zero_dwell_buffer_count = 0
+station_buffer_count = 0
+
+origin_only_count = 0
+destination_only_count = 0
+zero_dwell_count = 0
+actual_dwell_count = 0
 
 
 # ============================================================
@@ -639,6 +608,85 @@ for record in timetable:
 
 
     # ========================================================
+    # DETERMINE RECORD TYPE
+    # ========================================================
+
+    has_arrival = (
+        arrival_dt is not None
+    )
+
+    has_departure = (
+        departure_dt is not None
+    )
+
+
+    if (
+        has_arrival
+        and has_departure
+    ):
+
+        # ----------------------------------------------------
+        # Both arrival and departure exist.
+        # ----------------------------------------------------
+
+        if departure_dt == arrival_dt:
+
+            # -----------------------------------------------
+            # ZERO-DWELL / PASS-THROUGH MOVEMENT
+            #
+            # The train still uses the platform.
+            # It simply has no scheduled dwell duration.
+            #
+            # A small 5-minute clearance buffer is used.
+            # -----------------------------------------------
+
+            record_type = "ZERO_DWELL"
+
+            zero_dwell_count += 1
+
+        else:
+
+            # -----------------------------------------------
+            # ACTUAL DWELL
+            #
+            # The train remains at the platform between
+            # arrival and departure.
+            #
+            # Station-specific buffer is retained.
+            # -----------------------------------------------
+
+            record_type = "ACTUAL_DWELL"
+
+            actual_dwell_count += 1
+
+    elif has_departure:
+
+        # ----------------------------------------------------
+        # Origin / departure-only record.
+        #
+        # No arrival time is available.
+        # Use the small 5-minute clearance buffer.
+        # ----------------------------------------------------
+
+        record_type = "DEPARTURE_ONLY"
+
+        origin_only_count += 1
+
+    else:
+
+        # ----------------------------------------------------
+        # Destination / arrival-only record.
+        #
+        # No departure time is available.
+        # Use the small 5-minute clearance buffer.
+        # ----------------------------------------------------
+
+        record_type = "ARRIVAL_ONLY"
+
+        destination_only_count += 1
+
+
+    # ========================================================
     # DETERMINE START / END
     # ========================================================
 
@@ -713,41 +761,7 @@ for record in timetable:
 
 
     # ========================================================
-    # TRAIN TYPE
-    # ========================================================
-
-    train_number = str(
-        record.get(
-            "train_number",
-            ""
-        )
-    ).strip()
-
-
-    train = train_lookup.get(
-        train_number
-    )
-
-
-    if train is not None:
-
-        train_type = train.get(
-            "train_type",
-            "Express"
-        )
-
-    else:
-
-        train_type = "Express"
-
-
-    small_train = is_small_train(
-        train_type
-    )
-
-
-    # ========================================================
-    # BUFFER
+    # STATION BUFFER
     # ========================================================
 
     station_buffer = profile.get(
@@ -762,20 +776,45 @@ for record in timetable:
         continue
 
 
-    if small_train:
+    # ========================================================
+    # FINAL BUFFER LOGIC
+    # ========================================================
+    #
+    # ZERO-DWELL:
+    #     arrival == departure
+    #     -> 5-minute clearance
+    #
+    # DEPARTURE-ONLY:
+    #     only departure exists
+    #     -> 5-minute clearance
+    #
+    # ARRIVAL-ONLY:
+    #     only arrival exists
+    #     -> 5-minute clearance
+    #
+    # ACTUAL DWELL:
+    #     arrival != departure
+    #     -> station-specific buffer
+    #
+    # ========================================================
+
+    if record_type in {
+        "ZERO_DWELL",
+        "DEPARTURE_ONLY",
+        "ARRIVAL_ONLY"
+    }:
 
         buffer_minutes = (
-            SMALL_TRAIN_BUFFER_MINUTES
+            ZERO_DWELL_BUFFER_MINUTES
         )
 
-        small_train_count += 1
-        small_train_buffer_count += 1
+        zero_dwell_buffer_count += 1
 
     else:
 
         buffer_minutes = station_buffer
 
-        normal_train_buffer_count += 1
+        station_buffer_count += 1
 
 
     # ========================================================
@@ -1051,17 +1090,17 @@ print("=" * 70)
 print()
 
 print(
-    f"Allocation Records      : "
+    f"Allocation Records          : "
     f"{len(resource_allocations):,}"
 )
 
 print(
-    f"Stations Represented    : "
+    f"Stations Represented        : "
     f"{len(stations):,}"
 )
 
 print(
-    f"Platform Resources      : "
+    f"Platform Resources          : "
     f"{len(platform_resources):,}"
 )
 
@@ -1071,33 +1110,38 @@ print("PLATFORM TYPE")
 print("-" * 70)
 
 print(
-    f"MAINLINE                : "
+    f"MAINLINE                    : "
     f"{mainline:,}"
 )
 
 print(
-    f"SUBURBAN                : "
+    f"SUBURBAN                    : "
     f"{suburban:,}"
 )
 
 print()
 
-print("RESOURCE ALLOCATION")
+print("RECORD TYPE")
 print("-" * 70)
 
 print(
-    f"Fallback Allocations    : "
-    f"{fallback_count:,}"
+    f"Zero-Dwell / Pass-Through   : "
+    f"{zero_dwell_count:,}"
 )
 
 print(
-    f"Zero-Duration Records   : "
-    f"{zero_duration:,}"
+    f"Actual Dwell                : "
+    f"{actual_dwell_count:,}"
 )
 
 print(
-    f"Overnight Records       : "
-    f"{overnight_count:,}"
+    f"Departure-Only              : "
+    f"{origin_only_count:,}"
+)
+
+print(
+    f"Arrival-Only                : "
+    f"{destination_only_count:,}"
 )
 
 print()
@@ -1106,18 +1150,33 @@ print("BUFFER LOGIC")
 print("-" * 70)
 
 print(
-    f"EMU/MEMU Records        : "
-    f"{small_train_count:,}"
+    f"5-min Clearance Records    : "
+    f"{zero_dwell_buffer_count:,}"
 )
 
 print(
-    f"EMU/MEMU 5-min Buffer   : "
-    f"{small_train_buffer_count:,}"
+    f"Station Buffer Records      : "
+    f"{station_buffer_count:,}"
+)
+
+print()
+
+print("RESOURCE ALLOCATION")
+print("-" * 70)
+
+print(
+    f"Fallback Allocations        : "
+    f"{fallback_count:,}"
 )
 
 print(
-    f"Normal Train Buffer     : "
-    f"{normal_train_buffer_count:,}"
+    f"Zero-Duration Records       : "
+    f"{zero_duration:,}"
+)
+
+print(
+    f"Overnight Records           : "
+    f"{overnight_count:,}"
 )
 
 print()
@@ -1126,32 +1185,32 @@ print("SKIPPED RECORDS")
 print("-" * 70)
 
 print(
-    f"Missing Platform        : "
+    f"Missing Platform            : "
     f"{skipped_no_platform:,}"
 )
 
 print(
-    f"Invalid Station         : "
+    f"Invalid Station             : "
     f"{skipped_invalid_station:,}"
 )
 
 print(
-    f"Invalid Platform        : "
+    f"Invalid Platform            : "
     f"{skipped_invalid_platform:,}"
 )
 
 print(
-    f"Invalid Time            : "
+    f"Invalid Time                : "
     f"{skipped_invalid_time:,}"
 )
 
 print(
-    f"Missing Timetable ID    : "
+    f"Missing Timetable ID        : "
     f"{skipped_missing_id:,}"
 )
 
 print(
-    f"Missing Station Buffer  : "
+    f"Missing Station Buffer      : "
     f"{skipped_missing_buffer:,}"
 )
 
